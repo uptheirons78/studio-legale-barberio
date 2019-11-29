@@ -1,7 +1,6 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+// Import Custom Typefaces
+import "typeface-poppins";
+import "typeface-fira-sans";
 
-// You can delete this file if you're not using it
+// Import Bootstrap
+import "./node_modules/bootstrap/dist/css/bootstrap.css";
