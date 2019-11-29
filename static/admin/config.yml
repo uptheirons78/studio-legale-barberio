@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: uptheirons78/studio-legale-barberio
+
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+     preview: false
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Data di pubblicazione", name: "date", widget: "datetime" }
+      - { label: "Descrizione", name: "description", widget: "string" }
+      - { label: "Categoria", name: "category", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
