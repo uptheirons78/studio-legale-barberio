@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
   }
   p {
     color: ${props => props.theme.lightBlack};
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .heading-2 {

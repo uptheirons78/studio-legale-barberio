@@ -1,32 +1,90 @@
 import React from "react";
+import { graphql } from "gatsby";
 
 // Components
 import Layout from "../components/Layout/Layout";
 import SEO from "../components/seo";
+import Background from "../components/Home/Background";
+import Hero from "../components/Global/Hero";
+import Content from "../components/Home/Content";
+import Aside from "../components/Home/Aside";
+import Card from "../components/Global/Card";
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>HOME</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia nulla
-      numquam nisi animi aspernatur distinctio quibusdam culpa voluptatum
-      dolores, odio neque suscipit. At modi neque accusamus eos dolores
-      doloremque? Ab consequuntur iste, facere sit, accusantium eligendi magni
-      in nobis dolor commodi id possimus, suscipit alias porro. Repudiandae quis
-      quod harum iusto repellat architecto minus amet autem veritatis,
-      reprehenderit, inventore ad dignissimos asperiores neque culpa voluptatem
-      sed minima id! At praesentium vero alias voluptatem quia doloribus ipsam
-      soluta suscipit nostrum, sed, ipsa consequuntur error, pariatur molestiae
-      eveniet autem ratione expedita minus atque? Expedita quae in placeat
-      voluptate. Ratione ea quasi nihil repudiandae molestias suscipit officiis
-      dolore! Corrupti dicta ab natus. Aliquid qui, minima necessitatibus
-      veritatis repellendus omnis, perspiciatis tempora est expedita
-      voluptatibus adipisci dolorem sequi libero numquam pariatur quasi nemo
-      possimus cupiditate veniam sint. Eaque sit maxime nisi dolore quam
-      delectus est beatae harum esse non sapiente, nulla, quae aspernatur sequi.
-    </p>
-  </Layout>
-);
+// Utils
+import { findTitleLeft, findTitleRight } from "../utils/title";
+
+const IndexPage = ({ data }) => {
+  const { title, description } = data.markdownRemark.frontmatter;
+
+  return (
+    <Layout>
+      <SEO
+        title="Home"
+        description={description}
+        keywords={[
+          `laura barberio`,
+          `studio legale barberio`,
+          `diritto immigrazione`,
+          `asilo politico`,
+          `protezione internazionale`,
+          `gratuito patrocinio`,
+          `diritto degli stranieri`,
+        ]}
+      />
+      <Background>
+        <Hero
+          titleLeft={findTitleLeft(title)}
+          titleRight={findTitleRight(title)}
+          descrizione={description}
+        />
+      </Background>
+      <div className="container">
+        <div className="row">
+          <Content data={data} />
+          <Aside />
+        </div>
+        <h4 className="heading-2">Decisioni recenti</h4>
+        <hr className="mb-4" />
+        <div className="row my-3">
+          {data.allMarkdownRemark.edges.map(post => (
+            <Card key={post.node.id} post={post.node} />
+          ))}
+        </div>
+      </div>
+    </Layout>
+  );
+};
 
 export default IndexPage;
+
+export const IndexPageQuery = graphql`
+  query HomePageQuery {
+    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+      frontmatter {
+        title
+        description
+        heading
+      }
+      html
+    }
+    allMarkdownRemark(
+      filter: { frontmatter: { category: { eq: "sentenza" } } }
+      limit: 3
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            date(formatString: "DD MMM YYYY", locale: "it")
+          }
+          id
+          excerpt
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`;
