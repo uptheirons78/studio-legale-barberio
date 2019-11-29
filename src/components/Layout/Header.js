@@ -17,7 +17,7 @@ const Header = () => {
           <img
             src={Logo}
             width="300"
-            className="d-inline-block align-top"
+            className="d-inline-block align-top logo"
             alt="Studio Barberio logo"
           />
         </Navbar.Brand>
@@ -47,4 +47,10 @@ export default Header;
 
 const StyledNavbar = styled(Navbar)`
   background-color: #121212 !important;
+
+  .logo {
+    @media screen and (max-width: 500px) {
+      width: 200px;
+    }
+  }
 `;

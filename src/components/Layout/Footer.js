@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, useStaticQuery, graphql } from "gatsby";
 import styled from "styled-components";
 
 // Components
@@ -12,11 +12,28 @@ import { footerPages, legalPages } from "../../utils/pages";
 const Footer = () => {
   const year = new Date().getFullYear();
 
+  const { site } = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            title
+            social {
+              twitter
+              facebook
+              linkedin
+            }
+          }
+        }
+      }
+    `
+  );
+
   return (
     <StyledFooter className="py-3">
       <div className="container">
         <div className="row pt-2 pb-5 text-white">
-          <div className="col-md-6 px-5 footer-widget">
+          <div className="col-md-6 pl-2 pr-5 footer-widget">
             <img
               src={Logo}
               alt="Studio Legale Barberio Logo"
@@ -46,17 +63,17 @@ const Footer = () => {
             <h5 className="mt-1 footer-title">Seguici</h5>
             <ul className="social-container pt-2">
               <li className="social-link social-link__facebook">
-                <a href="https://www.facebook.com/studiobarberio.org/">
+                <a href={site.siteMetadata.social.facebook}>
                   <FaFacebookF />
                 </a>
               </li>
               <li className="social-link social-link__linkedin">
-                <a href="https://it.linkedin.com/in/avv-laura-barberio-99156368">
+                <a href={site.siteMetadata.social.linkedin}>
                   <FaLinkedinIn />
                 </a>
               </li>
               <li className="social-link social-link__twitter">
-                <a href="https://twitter.com/laurabarberio">
+                <a href={site.siteMetadata.social.twitter}>
                   <FaTwitter />
                 </a>
               </li>
