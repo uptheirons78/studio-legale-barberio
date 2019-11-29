@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 import Theme from "../../utils/theme";
 
 // Global Styles
-import GlobalStyle from "../styles/GlobalStyles";
+import GlobalStyle from "../Styles/GlobalStyles";
 
 // Components
 import Header from "./Header";
