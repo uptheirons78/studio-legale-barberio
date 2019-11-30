@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 // Components
-import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import Social from "../Global/Social";
+import Info from "../Global/Info";
 // Assets
 import LibroImage from "./LibroImage";
 import LauraImage from "./LauraImage";
@@ -41,31 +42,11 @@ const Aside = () => {
       </Widget>
       <Widget className="sidebar-widget mb-5">
         <h5>Seguici</h5>
-        <ul className="social-container">
-          <li className="social-link social-link__facebook">
-            <a href="https://www.facebook.com/studiobarberio.org/">
-              <FaFacebookF />
-            </a>
-          </li>
-          <li className="social-link social-link__linkedin">
-            <a href="https://it.linkedin.com/in/avv-laura-barberio-99156368">
-              <FaLinkedinIn />
-            </a>
-          </li>
-          <li className="social-link social-link__twitter">
-            <a href="https://twitter.com/laurabarberio">
-              <FaTwitter />
-            </a>
-          </li>
-        </ul>
+        <Social />
       </Widget>
       <Widget className="sidebar-widget mb-5">
         <h5>Contatti</h5>
-        <p>Via del Casale Strozzi, 31 00195 Roma</p>
-        <p>Tel: 06.483694</p>
-        <p>Tel: 06.48977102</p>
-        <p>Fax: 06.45765396</p>
-        <p>Email: avvocatolaura@studiobarberio.org</p>
+        <Info />
       </Widget>
     </div>
   );
@@ -90,36 +71,5 @@ const Widget = styled.div`
   a {
     color: ${props => props.theme.primaryColor};
     font-weight: 700;
-  }
-
-  .social-container {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-
-    .social-link {
-      margin-right: 0.5rem;
-      svg {
-        fill: #ffffff;
-        width: 3rem;
-        height: 3rem;
-        padding: 1rem;
-      }
-    }
-    .social-link__facebook {
-      svg {
-        background: #3a579a;
-      }
-    }
-    .social-link__linkedin {
-      svg {
-        background: #127bb6;
-      }
-    }
-    .social-link__twitter {
-      svg {
-        background: #4ab3f4;
-      }
-    }
   }
 `;

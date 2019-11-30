@@ -11,9 +11,10 @@ module.exports = {
     },
     ufficio: {
       indirizzo: "Via del Casale Strozzi n. 31",
-      città: "Roma",
+      city: "Roma",
       cap: "00195",
       telefono: "06 483694",
+      telefono2: "06 48977102",
       fax: "06 45765396",
       email: "avvocatolaura@studiobarberio.org",
     },

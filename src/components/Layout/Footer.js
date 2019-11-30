@@ -1,9 +1,9 @@
 import React from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { Link } from "gatsby";
 import styled from "styled-components";
 
 // Components
-import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import Social from "../Global/Social";
 
 // Assets and Utilities
 import Logo from "../../images/logo-studio-barberio.png";
@@ -11,23 +11,6 @@ import { footerPages, legalPages } from "../../utils/pages";
 
 const Footer = () => {
   const year = new Date().getFullYear();
-
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            social {
-              twitter
-              facebook
-              linkedin
-            }
-          }
-        }
-      }
-    `
-  );
 
   return (
     <StyledFooter className="py-3">
@@ -61,23 +44,7 @@ const Footer = () => {
           </div>
           <div className="col-md-3 px-5 footer-widget">
             <h5 className="mt-1 footer-title">Seguici</h5>
-            <ul className="social-container pt-2">
-              <li className="social-link social-link__facebook">
-                <a href={site.siteMetadata.social.facebook}>
-                  <FaFacebookF />
-                </a>
-              </li>
-              <li className="social-link social-link__linkedin">
-                <a href={site.siteMetadata.social.linkedin}>
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-link social-link__twitter">
-                <a href={site.siteMetadata.social.twitter}>
-                  <FaTwitter />
-                </a>
-              </li>
-            </ul>
+            <Social />
             <nav className="nav flex-column pt-2">
               {legalPages.map((page, idx) => (
                 <Link
@@ -128,32 +95,13 @@ const StyledFooter = styled.footer`
     color: ${props => props.theme.white};
   }
   .social-container {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin-left: 0;
     .social-link {
       margin-right: 0.5rem;
+      margin-top: 0.5rem;
       svg {
-        fill: #ffffff;
         width: 2rem;
         height: 2rem;
         padding: 0.5rem;
-      }
-    }
-    .social-link__facebook {
-      svg {
-        background: #3a579a;
-      }
-    }
-    .social-link__linkedin {
-      svg {
-        background: #127bb6;
-      }
-    }
-    .social-link__twitter {
-      svg {
-        background: #4ab3f4;
       }
     }
   }
