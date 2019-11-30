@@ -19,3 +19,61 @@ collections:
       - { label: "Descrizione", name: "description", widget: "string" }
       - { label: "Categoria", name: "category", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/pages/home/index.md"
+        label: "Home Page"
+        name: "index"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Heading", name: "heading", widget: "string"}
+          - {label: "Descrizione", name: "description", widget: "string"}
+          - { name: "body", label: "Body", widget: "markdown" }
+      - file: "content/pages/laura/index.md"
+        label: "Laura"
+        name: "laura"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "laura-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - { name: "body", label: "Body", widget: "markdown" }
+      - file: "content/pages/sara/index.md"
+        label: "Sara"
+        name: "sara"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "sara-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - { name: "body", label: "Body", widget: "markdown" }
+      - file: "content/pages/chi-siamo/index.md"
+        label: "Chi Siamo"
+        name: "chi-siamo"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "chi-siamo"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Heading", name: "heading", widget: "string"}
+          - {label: "Descrizione", name: "description", widget: "string"}
+          - { name: "body", label: "Body", widget: "markdown" }
+          - {
+              label: "Team Members",
+              name: "members",
+              widget: "object",
+              fields:
+                [
+                  {
+                    label: "Collaboratori Interni",
+                    name: "collaboratori",
+                    widget: "list",
+                    fields:
+                      [
+                        { label: "Nome", name: "name", widget: "string" },
+                        { label: "Foto", name: "image", widget: "image" },
+                        { label: "Descrizione Foto", name: "imageAlt", widget: "string" },
+                        { label: "Occupazione", name: "occupazione", widget: "string" },
+                        { label: "Descrizione", name: "descrizione", widget: "string" },
+                        { label: "Telefono", name: "telefono", widget: "string" },
+                        { label: "Email", name: "email", widget: "string" },
+                      ],
+                  },
+                ],
+            }
