@@ -27,6 +27,12 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  .aside {
+    @media screen and (max-width: 767px) {
+      padding-left: 0.5rem !important;
+    }
+  }
+
 `;
 
 export default GlobalStyle;

@@ -11,7 +11,7 @@ const Hero = ({ titleLeft, titleRight, descrizione }) => {
                 {titleLeft} <span>{titleRight}</span>
               </h1>
               <p
-                className="mb-5 pr-5"
+                className="mb-5 pr-5 hero-description"
                 style={{
                   maxWidth: "750px",
                   width: "100%",
@@ -54,6 +54,10 @@ const HeroHeader = styled.header`
       font-size: 2rem;
     }
 
+    @media screen and (max-width: 500px) {
+      font-size: 1.4rem;
+    }
+
     span {
       color: ${props => props.theme.primaryColor};
     }
@@ -65,6 +69,10 @@ const HeroHeader = styled.header`
 
     @media screen and (max-width: 600px) {
       font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: 0.9rem;
     }
   }
 `;
