@@ -1,27 +1,104 @@
 import React from "react";
 import { graphql } from "gatsby";
+import styled from "styled-components";
 
 // Components
 import Layout from "../components/Layout/Layout";
+import SEO from "../components/seo";
+import Background from "../components/BlogPost/Background";
+import Bio from "../components/BlogPost/Bio";
+import HeroPost from "../components/Global/PostHero";
 
 const BlogPost = ({ data }) => {
+  const {
+    title,
+    date,
+    description,
+    category,
+  } = data.markdownRemark.frontmatter;
   return (
     <Layout>
-      <div>
-        <h1>{data.markdownRemark.frontmatter.title}</h1>
-        <small>{data.markdownRemark.frontmatter.date}</small>
-        <p>{data.markdownRemark.frontmatter.description}</p>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: data.markdownRemark.html,
-          }}
-        ></div>
-      </div>
+      <SEO
+        title={title}
+        description={description}
+        keywords={[
+          `laura barberio`,
+          `studio legale barberio`,
+          `diritto immigrazione`,
+          `asilo politico`,
+          `protezione internazionale`,
+          `gratuito patrocinio`,
+          `diritto degli stranieri`,
+        ]}
+      />
+      <Background category={category}>
+        <HeroPost
+          title={title}
+          date={date}
+          description={description}
+          category={category}
+        />
+      </Background>
+      <PostContainer
+        className="container my-5"
+        style={{ maxWidth: "900px", width: "100%" }}
+      >
+        <div className="row">
+          <div className="col-md-12 px-0 mb-2 font-weight-bold">
+            Categoria: <span className="font-weight-normal">{category}</span>
+          </div>
+          <div className="col-md-12 px-0 mb-5 font-weight-bold">
+            In breve: <span className="font-weight-normal">{description}</span>
+          </div>
+          <div
+            className="text-justify col-md-12 px-0"
+            dangerouslySetInnerHTML={{
+              __html: data.markdownRemark.html,
+            }}
+          ></div>
+        </div>
+        <hr />
+        <Bio />
+      </PostContainer>
     </Layout>
   );
 };
 
 export default BlogPost;
+
+const PostContainer = styled.div`
+  strong,
+  a {
+    color: ${props => props.theme.primaryColor};
+    font-weight: 500;
+    transition: all 0.35s ease;
+  }
+
+  a:hover {
+    color: ${props => props.theme.secondaryColor};
+  }
+
+  @media screen and (max-width: 989px) {
+    max-width: 700px !important;
+  }
+  @media screen and (max-width: 770px) {
+    max-width: 500px !important;
+  }
+  @media screen and (max-width: 565px) {
+    width: 100% !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  p {
+    @media screen and (max-width: 770px) {
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 565px) {
+      font-size: 0.9rem;
+    }
+  }
+`;
 
 // Gatsby Query
 export const pageQuery = graphql`
@@ -37,7 +114,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD MMMM YYYY", locale: "it")
         description
         category
       }
