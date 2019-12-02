@@ -95,3 +95,21 @@ collections:
           - {label: "Titolo Header", name: "heading", widget: "string"}
           - {label: "Descrizione", name: "description", widget: "string"}
           - { name: "body", label: "Body", widget: "markdown" }
+      - file: "content/pages/collaboratori/index.md"
+        label: "Collaboratori Page"
+        name: "collaboratori-page"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "collaboratori-page"}
+          - {label: "Titolo", name: "title", widget: "string"}
+          - {label: "Titolo Header", name: "heading", widget: "string"}
+          - {label: "Descrizione", name: "description", widget: "string"}
+          - { name: "body", label: "Body", widget: "markdown" }
+      - file: "content/pages/contatti/index.md"
+        label: "Contatti Page"
+        name: "contatti-page"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contatti-page"}
+          - {label: "Titolo", name: "title", widget: "string"}
+          - {label: "Titolo Header", name: "heading", widget: "string"}
+          - {label: "Descrizione", name: "description", widget: "string"}
+          - { name: "body", label: "Body", widget: "markdown" }

@@ -3,12 +3,58 @@ import React from "react";
 // Components
 import Layout from "../components/Layout/Layout";
 import SEO from "../components/seo";
+import Background from "../components/Collaboratori/Background";
+import Hero from "../components/Global/Hero";
 
-const CollaboratoriPage = () => (
-  <Layout>
-    <SEO title="Rassegna Stampa" />
-    <h1>RASSEGNA STAMPA</h1>
-  </Layout>
-);
+// Utils
+import { findTitleLeft, findTitleRight } from "../utils/title";
+
+const CollaboratoriPage = ({ data }) => {
+  const { title, heading, description } = data.markdownRemark.frontmatter;
+
+  return (
+    <Layout>
+      <SEO
+        title={title}
+        description={description}
+        keywords={[
+          `laura barberio`,
+          `studio legale barberio`,
+          `diritto immigrazione`,
+          `asilo politico`,
+          `protezione internazionale`,
+          `gratuito patrocinio`,
+          `diritto degli stranieri`,
+        ]}
+      />
+      <Background>
+        <Hero
+          titleLeft={findTitleLeft(heading)}
+          titleRight={findTitleRight(heading)}
+          descrizione={description}
+        />
+      </Background>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12">
+            <h1>RASSEGNA STAMPA</h1>
+          </div>
+        </div>
+      </div>
+    </Layout>
+  );
+};
 
 export default CollaboratoriPage;
+
+export const CollaboratoriPageQuery = graphql`
+  query CollaboratoriQuery {
+    markdownRemark(frontmatter: { templateKey: { eq: "collaboratori-page" } }) {
+      frontmatter {
+        title
+        heading
+        description
+      }
+    }
+  }
+`;

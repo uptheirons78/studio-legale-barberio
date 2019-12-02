@@ -15,6 +15,10 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.1rem;
   }
 
+  strong {
+    color: ${props => props.theme.primaryColor};
+  }
+
   .heading-2 {
     text-transform: uppercase;
     color: ${props => props.theme.black}
