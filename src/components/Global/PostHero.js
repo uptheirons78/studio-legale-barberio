@@ -1,5 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+
+// Animation
+import Fade from "../Animations/Fade";
+
 const HeroPost = ({ title, date }) => {
   return (
     <HeroHeader className="py-5 mb-5">
@@ -14,8 +18,10 @@ const HeroPost = ({ title, date }) => {
                   margin: "0 auto",
                 }}
               >
-                <h1 className="text-white mt-5 mb-2 hero-title">{title}</h1>
-                <p>Pubblicato il {date}</p>
+                <Fade>
+                  <h1 className="text-white mt-5 mb-2 hero-title">{title}</h1>
+                  <p>Pubblicato il {date}</p>
+                </Fade>
               </div>
             </div>
           </div>

@@ -8,6 +8,7 @@ import SEO from "../components/seo";
 import Background from "../components/BlogPost/Background";
 import Bio from "../components/BlogPost/Bio";
 import HeroPost from "../components/Global/PostHero";
+import SocialShare from "../components/Global/SocialShare";
 
 const BlogPost = ({ data }) => {
   const {
@@ -16,6 +17,9 @@ const BlogPost = ({ data }) => {
     description,
     category,
   } = data.markdownRemark.frontmatter;
+
+  const { slug } = data.markdownRemark.fields;
+
   return (
     <Layout>
       <SEO
@@ -56,6 +60,14 @@ const BlogPost = ({ data }) => {
               __html: data.markdownRemark.html,
             }}
           ></div>
+          <SocialShare
+            socialConfig={{
+              config: {
+                title: { title },
+                url: `https://quizzical-lewin-a6c5f1.netlify.com/blog${slug}`,
+              },
+            }}
+          />
         </div>
         <hr />
         <Bio />
@@ -112,6 +124,9 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "DD MMMM YYYY", locale: "it")
