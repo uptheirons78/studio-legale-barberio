@@ -17,7 +17,12 @@ collections:
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Data di pubblicazione", name: "date", widget: "datetime" }
       - { label: "Descrizione", name: "description", widget: "string" }
-      - { label: "Categoria", name: "category", widget: "string" }
+      - { label: "Categoria",
+          name: "category",
+          widget: "select",
+          options: ["sentenza", "articolo"],
+          default: ["articolo"]
+        }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages"
     label: "Pages"
