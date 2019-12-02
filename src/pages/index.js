@@ -77,9 +77,11 @@ export const IndexPageQuery = graphql`
           frontmatter {
             title
             date(formatString: "DD MMM YYYY", locale: "it")
+            category
           }
           id
           excerpt
+          timeToRead
           fields {
             slug
           }

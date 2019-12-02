@@ -77,3 +77,21 @@ collections:
                   },
                 ],
             }
+      - file: "content/pages/blog/index.md"
+        label: "Blog Page"
+        name: "blog-page"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-page"}
+          - {label: "Titolo", name: "title", widget: "string"}
+          - {label: "Titolo Header", name: "heading", widget: "string"}
+          - {label: "Descrizione", name: "description", widget: "string"}
+          - { name: "body", label: "Body", widget: "markdown" }
+      - file: "content/pages/sentenze/index.md"
+        label: "Sentenze Page"
+        name: "sentenze-page"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "sentenze-page"}
+          - {label: "Titolo", name: "title", widget: "string"}
+          - {label: "Titolo Header", name: "heading", widget: "string"}
+          - {label: "Descrizione", name: "description", widget: "string"}
+          - { name: "body", label: "Body", widget: "markdown" }

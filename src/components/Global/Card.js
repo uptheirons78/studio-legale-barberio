@@ -3,15 +3,19 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 // Assets
 import SentenzaImage from "../../images/banner-sentenze.jpg";
+import ArticoloImage from "../../images/banner-rassegna-stampa.jpg";
 
 const Card = ({ post }) => {
+  const cardImage =
+    post.frontmatter.category === "sentenza" ? SentenzaImage : ArticoloImage;
+
   return (
     <div className="col-md-4 mb-5">
       <div className="card h-100 shadow">
         <Inner className="inner">
           <img
             className="card-img-top"
-            src={SentenzaImage}
+            src={cardImage}
             alt={post.frontmatter.title}
           />
           <div className="card-caption px-2 py-1">{post.frontmatter.date}</div>
@@ -23,6 +27,9 @@ const Card = ({ post }) => {
           >
             {post.frontmatter.title}
           </h5>
+          <p className="card-text text-justify" style={{ fontSize: "0.9rem" }}>
+            Tempo di lettura: {post.timeToRead} min
+          </p>
           <p className="card-text text-justify" style={{ fontSize: "0.9rem" }}>
             {post.excerpt}
           </p>

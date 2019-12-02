@@ -1,31 +1,61 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 
+// Components
 import Layout from "../components/Layout/Layout";
 import SEO from "../components/seo";
+import Background from "../components/Sentenze/Background";
+import Hero from "../components/Global/Hero";
+import Card from "../components/Global/Card";
+
+// Utils
+import { findTitleLeft, findTitleRight } from "../utils/title";
 
 const Sentenze = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
-
-  console.log(posts);
+  const { title, heading, description } = data.markdownRemark.frontmatter;
 
   return (
     <Layout>
-      <SEO title="Sentenze" />
-      <h1>Hi from the sentenze page</h1>
-      <p>Welcome to sentenze page</p>
-      <div style={{ marginTop: "10vh" }}>
-        <ul>
+      <SEO
+        title={title}
+        description={description}
+        keywords={[
+          `laura barberio`,
+          `studio legale barberio`,
+          `diritto immigrazione`,
+          `asilo politico`,
+          `protezione internazionale`,
+          `gratuito patrocinio`,
+          `diritto degli stranieri`,
+        ]}
+      />
+      <Background>
+        <Hero
+          titleLeft={findTitleLeft(heading)}
+          titleRight={findTitleRight(heading)}
+          descrizione={description}
+        />
+      </Background>
+      <div className="container">
+        <div className="row">
+          <div className="col md 12">
+            <div
+              className="text-justify"
+              dangerouslySetInnerHTML={{
+                __html: data.markdownRemark.html,
+              }}
+            ></div>
+          </div>
+        </div>
+        <h4 className="heading-2 mt-5">Sentenze e decisioni</h4>
+        <hr className="mb-4" />
+        <div className="row my-5">
           {posts.map(post => (
-            <li key={post.node.id}>
-              <Link to={`/blog/${post.node.fields.slug}`}>
-                {post.node.frontmatter.title}
-              </Link>
-            </li>
+            <Card key={post.node.id} post={post.node} />
           ))}
-        </ul>
+        </div>
       </div>
-      <Link to="/">Go back to the homepage</Link>
     </Layout>
   );
 };
@@ -34,6 +64,14 @@ export default Sentenze;
 
 export const SentenzePageQuery = graphql`
   query SentenzeQuery {
+    markdownRemark(frontmatter: { templateKey: { eq: "sentenze-page" } }) {
+      frontmatter {
+        title
+        heading
+        description
+      }
+      html
+    }
     allMarkdownRemark(
       filter: { frontmatter: { category: { eq: "sentenza" } } }
       sort: { fields: [frontmatter___date], order: DESC }
@@ -41,6 +79,8 @@ export const SentenzePageQuery = graphql`
       edges {
         node {
           id
+          excerpt
+          timeToRead
           fields {
             slug
           }
@@ -48,7 +88,7 @@ export const SentenzePageQuery = graphql`
           frontmatter {
             title
             description
-            date
+            date(formatString: "DD MMM YYYY", locale: "it")
             category
           }
         }
