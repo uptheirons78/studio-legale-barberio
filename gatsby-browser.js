@@ -6,4 +6,4 @@ import "typeface-fira-sans";
 import "./node_modules/bootstrap/dist/css/bootstrap.css";
 
 // Import Global CSS file
-import "./src/components/Styles/global.css";
+// import "./src/components/Styles/global.css";
