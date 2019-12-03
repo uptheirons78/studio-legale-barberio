@@ -108,7 +108,7 @@ collections:
           - {label: "Titolo", name: "title", widget: "string"}
           - {label: "Titolo Header", name: "heading", widget: "string"}
           - {label: "Descrizione", name: "description", widget: "string"}
-          - { name: "body", label: "Body", widget: "markdown", required: "false" }
+          - { name: "body", label: "Body", widget: "markdown", required: false }
           - {
               label: "I Nostri Collaboratori",
               name: "collaboratori",
@@ -125,10 +125,10 @@ collections:
                         { label: "Titolo", name: "titolo", widget: "string"},
                         { label: "Specializzazione", name: "specializzazione", widget: "string" },
                         { label: "Foro", name: "foro", widget: "string"},
-                        { label: "Indirizzo", name: "indirizzo", widget: "string", required: "false" },
-                        { label: "Telefono", name: "telefono", widget: "string", required: "false" },
-                        { label: "Email", name: "email", widget: "string", required: "false" },
-                        { label: "Website", name: "website", widget: "string", required: "false" },
+                        { label: "Indirizzo", name: "indirizzo", widget: "string", required: false },
+                        { label: "Telefono", name: "telefono", widget: "string", required: false },
+                        { label: "Email", name: "email", widget: "string", required: false },
+                        { label: "Website", name: "website", widget: "string", required: false },
                         { label: "Description", name: "description", widget: "text"}
                       ],
                   },
