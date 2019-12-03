@@ -7,17 +7,17 @@ description: >-
   direttiva ePrivacy ti informiamo su come i tuoi dati personali vengono
   trattati in questo sito.
 ---
-## Titolare del Trattamento dei Dati
+#### Titolare del Trattamento dei Dati
 
 Avvocato Laura Barberio, Via del Casale Strozzi n. 31, 00195 ROMA (ITALIA)
 
 Indirizzo email del Titolare: _info@studiobarberio.org_
 
-## Tipologie di Dati raccolti
+#### Tipologie di Dati raccolti
 
 Fra i Dati Personali raccolti da questa Applicazione, in modo autonomo o tramite terze parti, ci sono: Cookie; Dati di utilizzo. Dettagli completi su ciascuna tipologia di dati raccolti sono forniti nelle sezioni dedicate di questa privacy policy o mediante specifici testi informativi visualizzati prima della raccolta dei dati stessi. I Dati Personali possono essere liberamente forniti dall'Utente o, nel caso di Dati di Utilizzo, raccolti automaticamente durante l'uso di questa Applicazione. Se non diversamente specificato, tutti i Dati richiesti da questa Applicazione sono obbligatori. Se l’Utente rifiuta di comunicarli, potrebbe essere impossibile per questa Applicazione fornire il Servizio. Nei casi in cui questa Applicazione indichi alcuni Dati come facoltativi, gli Utenti sono liberi di astenersi dal comunicare tali Dati, senza che ciò abbia alcuna conseguenza sulla disponibilità del Servizio o sulla sua operatività. Gli Utenti che dovessero avere dubbi su quali Dati siano obbligatori, sono incoraggiati a contattare il Titolare. L’eventuale utilizzo di Cookie - o di altri strumenti di tracciamento - da parte di questa Applicazione o dei titolari dei servizi terzi utilizzati da questa Applicazione, ove non diversamente precisato, ha la finalità di fornire il Servizio richiesto dall'Utente, oltre alle ulteriori finalità descritte nel presente documento e nella Cookie Policy, se disponibile. L'Utente si assume la responsabilità dei Dati Personali di terzi ottenuti, pubblicati o condivisi mediante questa Applicazione e garantisce di avere il diritto di comunicarli o diffonderli, liberando il Titolare da qualsiasi responsabilità verso terzi.
 
-## Modalità e luogo del trattamento dei Dati raccolti
+#### Modalità e luogo del trattamento dei Dati raccolti
 
 **Modalità di trattamento**
 
@@ -57,11 +57,11 @@ Quando il trattamento è basato sul consenso dell’Utente, il Titolare può con
 
 Al termine del periodo di conservazione i Dati Personali saranno cancellati. Pertanto, allo spirare di tale termine il diritto di accesso, cancellazione, rettificazione ed il diritto alla portabilità dei Dati non potranno più essere esercitati.
 
-## Finalità del Trattamento dei Dati raccolti
+#### Finalità del Trattamento dei Dati raccolti
 
 I Dati dell’Utente sono raccolti per consentire al Titolare di fornire i propri Servizi, così come per le seguenti finalità: Interazione con social network e piattaforme esterne. Per ottenere ulteriori informazioni dettagliate sulle finalità del trattamento e sui Dati Personali concretamente rilevanti per ciascuna finalità, l’Utente può fare riferimento alle relative sezioni di questo documento.
 
-## Dettagli sul trattamento dei Dati Personali
+#### Dettagli sul trattamento dei Dati Personali
 
 I Dati Personali sono raccolti per le seguenti finalità ed utilizzando i seguenti servizi:
 
@@ -87,7 +87,7 @@ Il pulsante “Condividi” e i widget sociali di Whatsapp sono servizi di inter
 
 
 
-## Diritti dell’Utente
+#### Diritti dell’Utente
 
 Gli Utenti possono esercitare determinati diritti con riferimento ai Dati trattati dal Titolare.
 
@@ -110,7 +110,7 @@ Quando i Dati Personali sono trattati nell’interesse pubblico, nell’esercizi
 
 Per esercitare i diritti dell’Utente, gli Utenti possono indirizzare una richiesta agli estremi di contatto del Titolare indicati in questo documento. Le richieste sono depositate a titolo gratuito e evase dal Titolare nel più breve tempo possibile, in ogni caso entro un mese.
 
-## Ulteriori informazioni sul trattamento
+#### Ulteriori informazioni sul trattamento
 
 **Difesa in giudizio**
 
@@ -136,7 +136,7 @@ Questa Applicazione non supporta le richieste “Do Not Track”. Per scoprire 
 
 Il Titolare del Trattamento si riserva il diritto di apportare modifiche alla presente privacy policy in qualunque momento dandone informazione agli Utenti su questa pagina e, se possibile, su questa Applicazione nonché, qualora tecnicamente e legalmente fattibile, inviando una notifica agli Utenti attraverso uno degli estremi di contatto di cui è in possesso il Titolare . Si prega dunque di consultare regolarmente questa pagina, facendo riferimento alla data di ultima modifica indicata in fondo. Qualora le modifiche interessino trattamenti la cui base giuridica è il consenso, il Titolare provvederà a raccogliere nuovamente il consenso dell’Utente, se necessario.
 
-## Definizioni e riferimenti legali
+#### Definizioni e riferimenti legali
 
 **Dati Personali (o Dati)**
 
@@ -178,6 +178,6 @@ Salvo ove diversamente specificato, ogni riferimento all’Unione Europea conten
 
 Piccola porzione di dati conservata all'interno del dispositivo dell'Utente.
 
-## Riferimenti legali
+#### Riferimenti legali
 
 La presente informativa privacy è redatta sulla base di molteplici ordinamenti legislativi, inclusi gli artt. 13 e 14 del Regolamento (UE) 2016/679. Ove non diversamente specificato, questa informativa privacy riguarda esclusivamente questa Applicazione
