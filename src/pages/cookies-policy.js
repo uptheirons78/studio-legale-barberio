@@ -1,4 +1,6 @@
 import React from "react";
+import { graphql } from "gatsby";
+import styled from "styled-components";
 
 // Components
 import Layout from "../components/Layout/Layout";
@@ -6,12 +8,17 @@ import SEO from "../components/seo";
 import Background from "../components/Cookies/Background";
 import Hero from "../components/Global/Hero";
 
-const CookiesPolicy = () => {
+// Utils
+import { findTitleLeft, findTitleRight } from "../utils/title";
+
+const CookiesPolicy = ({ data }) => {
+  const { title, heading, description } = data.markdownRemark.frontmatter;
+
   return (
     <Layout>
       <SEO
-        title="Cookies Policy"
-        description="breve descrizione"
+        title={title}
+        description={description}
         keywords={[
           `laura barberio`,
           `studio legale barberio`,
@@ -24,50 +31,19 @@ const CookiesPolicy = () => {
       />
       <Background>
         <Hero
-          titleLeft="Cookies"
-          titleRight="Policy"
-          descrizione="L’obiettivo di questa pagina è quello di informare i nostri utenti su cosa sono i Cookies e su come questi influenzano la vostra navigazione all'interno del nostro sito."
+          titleLeft={findTitleLeft(heading)}
+          titleRight={findTitleRight(heading)}
+          descrizione={description}
         />
       </Background>
       <div className="container">
         <div className="row">
-          <div className="col-md-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-            sapiente distinctio at ipsa ut harum possimus. Harum, eius
-            perferendis? Ipsum ullam possimus impedit beatae atque officia
-            aliquam dignissimos consectetur laboriosam. Libero iusto mollitia
-            rerum, quibusdam obcaecati eaque quo maxime laborum esse cum,
-            excepturi vitae eius sequi autem reprehenderit? Tenetur recusandae
-            quisquam a minus odio? Tempora quisquam atque facere ullam amet
-            sapiente, doloribus ex maxime quis rerum consectetur deleniti
-            tempore veritatis quas distinctio magni minus possimus recusandae
-            sequi officiis aperiam optio eos eveniet. Non perspiciatis dolorum
-            impedit adipisci, ab ducimus voluptatum sequi eligendi ipsa
-            molestias consectetur quidem. Inventore nisi aliquid sunt cumque
-            esse, velit mollitia at explicabo quod! Distinctio nulla maxime nam
-            ducimus, dicta neque optio laborum at doloremque. Officia esse in
-            quo laborum nemo quod ad saepe. Deleniti sint architecto nam porro
-            laborum, error illo laudantium aspernatur perferendis vel minus?
-            Fuga magnam reiciendis voluptate distinctio? Saepe ut ipsa omnis
-            veniam hic iste, eveniet laudantium aliquam molestiae facilis soluta
-            quidem temporibus, eos maiores fugiat necessitatibus deserunt eius
-            dolor. Tenetur placeat deserunt velit eum asperiores assumenda
-            praesentium nostrum ullam, incidunt temporibus dicta ratione impedit
-            suscipit dolorum voluptas enim accusantium quae illo quo excepturi
-            neque quisquam quidem? Iure nisi ipsa vitae quos ipsam fugit? Libero
-            quod vitae quibusdam. Ex, quibusdam odio laudantium veritatis,
-            maiores veniam, expedita in similique aspernatur modi cum ut
-            perspiciatis itaque debitis eum voluptates! Impedit, culpa
-            voluptatem quos veniam maiores quidem fuga at, laborum, dolores
-            recusandae temporibus? Ducimus architecto pariatur magni accusantium
-            iusto numquam facere iure in deleniti non veniam atque velit
-            officiis, asperiores iste. Suscipit eaque, perspiciatis sequi
-            dolorem nihil perferendis, vitae architecto aperiam quas illum enim
-            accusamus. Magni suscipit qui blanditiis at doloribus minus
-            perspiciatis! Necessitatibus repudiandae cum magnam dolorem nostrum
-            dicta sapiente modi libero placeat. Iusto adipisci, debitis eos
-            consequatur laborum fugiat tempora similique nobis sequi soluta.
-          </div>
+          <Cookies
+            className="col-md-12 my-5 text-justify"
+            dangerouslySetInnerHTML={{
+              __html: data.markdownRemark.html,
+            }}
+          />
         </div>
       </div>
     </Layout>
@@ -75,3 +51,45 @@ const CookiesPolicy = () => {
 };
 
 export default CookiesPolicy;
+
+const Cookies = styled.div`
+  font-size: 0.9rem;
+  color: ${props => props.theme.lightBlack};
+
+  h4 {
+    margin-bottom: 1rem;
+    color: ${props => props.theme.black};
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: ${props => props.theme.lightBlack};
+  }
+
+  a {
+    color: ${props => props.theme.primaryColor};
+    font-weight: 700;
+    transition: all 0.35s ease;
+
+    &:hover {
+      color: ${props => props.theme.secondaryColor};
+    }
+
+    &:hover strong {
+      color: ${props => props.theme.secondaryColor};
+    }
+  }
+`;
+
+export const cookiesQuery = graphql`
+  query CookiesPage {
+    markdownRemark(frontmatter: { templateKey: { eq: "cookies-policy" } }) {
+      frontmatter {
+        title
+        heading
+        description
+      }
+      html
+    }
+  }
+`;
