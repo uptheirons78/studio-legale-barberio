@@ -6,6 +6,7 @@ import Layout from "../components/Layout/Layout";
 import SEO from "../components/seo";
 import Background from "../components/Collaboratori/Background";
 import Hero from "../components/Global/Hero";
+import CollaboratoriCard from "../components/Collaboratori/CollaboratoriCard";
 
 // Utils
 import { findTitleLeft, findTitleRight } from "../utils/title";
@@ -36,11 +37,7 @@ const CollaboratoriPage = ({ data }) => {
         />
       </Background>
       <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <h1>RASSEGNA STAMPA</h1>
-          </div>
-        </div>
+        <CollaboratoriCard />
       </div>
     </Layout>
   );
