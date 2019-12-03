@@ -43,10 +43,10 @@ export const footerPages = [
 export const legalPages = [
   {
     name: "Privacy Policy",
-    path: "/",
+    path: "/privacy-policy",
   },
   {
     name: "Cookies Policy",
-    path: "/",
+    path: "/cookies-policy",
   },
 ];

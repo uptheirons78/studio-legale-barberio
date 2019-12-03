@@ -143,3 +143,21 @@ collections:
           - {label: "Titolo Header", name: "heading", widget: "string"}
           - {label: "Descrizione", name: "description", widget: "string"}
           - { name: "body", label: "Body", widget: "markdown" }
+      - file: "content/pages/privacy/index.md"
+        label: "Privacy Policy"
+        name: "privacy-policy"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "privacy-policy"}
+          - {label: "Titolo", name: "title", widget: "string"}
+          - {label: "Titolo Header", name: "heading", widget: "string"}
+          - {label: "Descrizione", name: "description", widget: "string"}
+          - { name: "body", label: "Body", widget: "markdown" }
+      - file: "content/pages/cookies/index.md"
+        label: "Cookies Policy"
+        name: "cookies-policy"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "cookies-policy"}
+          - {label: "Titolo", name: "title", widget: "string"}
+          - {label: "Titolo Header", name: "heading", widget: "string"}
+          - {label: "Descrizione", name: "description", widget: "string"}
+          - { name: "body", label: "Body", widget: "markdown" }
