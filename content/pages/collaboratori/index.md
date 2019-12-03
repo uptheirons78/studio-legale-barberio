@@ -52,7 +52,7 @@ collaboratori:
         comunale e delle società miste. Organizza importanti incontri ed eventi
         per la formazione e l’informazione sul diritto all’inclusione, riportati
         e diffusi dalla stampa e televisione locali.
-      email: 'null'
+      email: ''
       foro: Reggio Calabria
       indirizzo: Corso Garibaldi Giuseppe 468/A - 89127 Reggio Calabria (RC)
       name: Francesco Nucara
@@ -62,7 +62,7 @@ collaboratori:
         di asilo.
       telefono: 0965 332706
       titolo: Avvocato Cassazionista
-      website: 'null'
+      website: ''
     - description: >-
         Avvocato del Foro di Reggio Calabria, vanta un’esperienza professionale
         nel settore del diritto civile e penale. E’ specializzata in Professioni
@@ -82,7 +82,7 @@ collaboratori:
         diritto di famiglia, diritto del lavoro e contrattualistica.
       telefono: 348 8032302
       titolo: Avvocato
-      website: 'null'
+      website: ''
     - description: >-
         Avvocato Cassazionista dal 2008, dal 2011 è mediatore in materia civile
         e commerciale ai sensi del D. Lgs. 28/2010. Opera in uno studio a
@@ -134,14 +134,14 @@ collaboratori:
         pubblicazioni specialistiche, nonchè supervisore della Ricerca “Betwix
         and between: Turin’s CIE – indagine sui diritti umani all’interno del
         CIE di Torino”, per l’International University College di Torino.
-      email: 'null'
+      email: ''
       foro: Torino
       indirizzo: Via Cavalli n. 28 bis - 10138 Torino
       name: Maurizio Veglio
       specializzazione: Si occupa di diritto dell’immigrazione e diritto penale.
       telefono: 011 5826851
       titolo: Avvocato
-      website: 'null'
+      website: ''
 ---
 Di seguito un elenco di professionisti con i quali collaboriamo per garantire una migliore assistenza ai nostri clienti ed avere la possibilità di operare su tutto il territorio italiano nei casi che li riguardano.
 
