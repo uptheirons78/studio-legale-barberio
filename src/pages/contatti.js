@@ -8,9 +8,19 @@ import SEO from "../components/seo";
 import Background from "../components/Contatti/Background";
 import Hero from "../components/Global/Hero";
 import Info from "../components/Global/Info";
+import Mappa from "../components/Global/Map";
 
 // Utils
 import { findTitleLeft, findTitleRight } from "../utils/title";
+
+// Coordinate
+const coordinate = [
+  {
+    nome: "sede",
+    lat: 41.916878,
+    lng: 12.453008,
+  },
+];
 
 const ContattiPage = ({ data }) => {
   const { title, heading, description } = data.markdownRemark.frontmatter;
@@ -51,17 +61,14 @@ const ContattiPage = ({ data }) => {
         <hr />
         <div className="row">
           <div className="col-md-8 my-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-            cupiditate necessitatibus vitae laudantium. Nulla voluptatem ratione
-            reiciendis voluptas repellendus voluptates alias blanditiis! Ducimus
-            neque ex, odit illum facere sapiente ipsum debitis? Natus nihil nam
-            et obcaecati voluptas deserunt sed quod quos tenetur possimus?
-            Perferendis velit veniam molestias asperiores consectetur
-            praesentium expedita necessitatibus hic!
+            <Widget>
+              <h5 className="mb-2">Dove Siamo</h5>
+              <Mappa coordinate={coordinate} />
+            </Widget>
           </div>
           <div className="col-md-4 my-5">
             <Widget>
-              <h5>Informazioni Utili</h5>
+              <h5 className="mb-2">Informazioni Utili</h5>
               <Info />
             </Widget>
           </div>
