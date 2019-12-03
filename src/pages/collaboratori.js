@@ -13,6 +13,8 @@ import { findTitleLeft, findTitleRight } from "../utils/title";
 
 const CollaboratoriPage = ({ data }) => {
   const { title, heading, description } = data.markdownRemark.frontmatter;
+  const collaboratori =
+    data.markdownRemark.frontmatter.collaboratori.collaboratori_esterni;
 
   return (
     <Layout>
@@ -37,7 +39,12 @@ const CollaboratoriPage = ({ data }) => {
         />
       </Background>
       <div className="container">
-        <CollaboratoriCard />
+        {collaboratori.map(collaboratore => (
+          <CollaboratoriCard
+            key={collaboratore.name}
+            collaboratore={collaboratore}
+          />
+        ))}
       </div>
     </Layout>
   );
@@ -52,6 +59,19 @@ export const CollaboratoriPageQuery = graphql`
         title
         heading
         description
+        collaboratori {
+          collaboratori_esterni {
+            name
+            titolo
+            foro
+            specializzazione
+            indirizzo
+            telefono
+            email
+            website
+            description
+          }
+        }
       }
     }
   }
