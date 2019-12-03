@@ -30,6 +30,10 @@ const HomeContent = styled.div`
     font-weight: 700;
   }
 
+  a:hover {
+    color: ${props => props.theme.secondaryColor};
+  }
+
   .btn {
     color: #fff !important;
     background-color: ${props => props.theme.primaryColor};
