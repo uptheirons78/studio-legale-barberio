@@ -15,8 +15,9 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.1rem;
   }
 
-  strong {
+  strong, a {
     color: ${props => props.theme.primaryColor};
+    transition: all .350s ease;
   }
 
   .heading-2 {

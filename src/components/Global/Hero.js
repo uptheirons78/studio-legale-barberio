@@ -9,7 +9,10 @@ const Hero = ({ titleLeft, titleRight, descrizione }) => {
           <div className="row h-100 align-items-center">
             <div className="col-lg-12">
               <h1 className="text-white mt-5 mb-2 hero-title">
-                {titleLeft} <span>{titleRight}</span>
+                {titleLeft.toUpperCase()}{" "}
+                <span style={{ color: "#701212" }}>
+                  {titleRight.toUpperCase()}
+                </span>
               </h1>
               <p
                 className="mb-5 pr-5 hero-description"
@@ -48,7 +51,6 @@ const HeroHeader = styled.header`
   }
 
   .hero-title {
-    text-transform: uppercase;
     font-size: 3rem;
 
     @media screen and (max-width: 600px) {
@@ -57,10 +59,6 @@ const HeroHeader = styled.header`
 
     @media screen and (max-width: 500px) {
       font-size: 1.4rem;
-    }
-
-    span {
-      color: ${props => props.theme.primaryColor};
     }
   }
 
