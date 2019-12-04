@@ -24,12 +24,14 @@ collections:
           default: ["articolo"]
         }
       - { label: "Sentenza", name: "sentenza", widget: "file", required: false }
+      - { label: "Testo Pulsante Sentenza", name: "sentenza_btn", widget: "string", required: false }
       - { label: "Link Articolo",
           name: "link",
           widget: "string",
           required: false,
           hint: "Aggiungere qui il link ad un articolo esterno al sito quando serve"
         }
+      - { label: "Testo Pulsante Articolo", name: "articolo_btn", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages"
     label: "Pagine"
