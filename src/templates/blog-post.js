@@ -57,7 +57,9 @@ const BlogPost = ({ data }) => {
             style={{ color: "#701212" }}
           >
             Categoria:{" "}
-            <span style={{ color: "#393939" }}>{category.toUpperCase()}</span>
+            <span style={{ color: "#393939", textTransform: "uppercase" }}>
+              {category}
+            </span>
           </div>
           <div
             className="col-md-12 px-0 mb-5 font-weight-bold text-justify"
