@@ -16,6 +16,10 @@ const BlogPost = ({ data }) => {
     date,
     description,
     category,
+    sentenza,
+    sentenza_btn,
+    link,
+    articolo_btn,
   } = data.markdownRemark.frontmatter;
 
   const { slug } = data.markdownRemark.fields;
@@ -48,11 +52,18 @@ const BlogPost = ({ data }) => {
         style={{ maxWidth: "900px", width: "100%" }}
       >
         <div className="row">
-          <div className="col-md-12 px-0 mb-2 font-weight-bold">
-            Categoria: <span className="font-weight-normal">{category}</span>
+          <div
+            className="col-md-12 px-0 mb-2 font-weight-bold text-justify"
+            style={{ color: "#701212" }}
+          >
+            Categoria:{" "}
+            <span style={{ color: "#393939" }}>{category.toUpperCase()}</span>
           </div>
-          <div className="col-md-12 px-0 mb-5 font-weight-bold">
-            In breve: <span className="font-weight-normal">{description}</span>
+          <div
+            className="col-md-12 px-0 mb-5 font-weight-bold text-justify"
+            style={{ color: "#701212" }}
+          >
+            In breve: <span style={{ color: "#393939" }}>{description}</span>
           </div>
           <div
             className="text-justify col-md-12 px-0"
@@ -60,6 +71,28 @@ const BlogPost = ({ data }) => {
               __html: data.markdownRemark.html,
             }}
           ></div>
+          <div className="col-md-12 px-0 mb-5">
+            {sentenza && (
+              <a
+                className="btn post-button"
+                href={sentenza}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {sentenza_btn}
+              </a>
+            )}
+            {link && (
+              <a
+                className="btn post-button"
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {articolo_btn}
+              </a>
+            )}
+          </div>
           <SocialShare
             socialConfig={{
               config: {
@@ -110,6 +143,20 @@ const PostContainer = styled.div`
       font-size: 0.9rem;
     }
   }
+
+  .post-button {
+    background-color: ${props => props.theme.primaryColor};
+    color: #fff;
+    border: none;
+    transition: all 0.35s ease;
+    margin-right: 1rem;
+    box-shadow: none !important;
+
+    &:hover {
+      background-color: ${props => props.theme.secondaryColor};
+      color: #fff !important;
+    }
+  }
 `;
 
 // Gatsby Query
@@ -132,6 +179,10 @@ export const pageQuery = graphql`
         date(formatString: "DD MMMM YYYY", locale: "it")
         description
         category
+        sentenza
+        sentenza_btn
+        link
+        articolo_btn
       }
     }
   }

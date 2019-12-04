@@ -57,6 +57,11 @@ const ShareContainer = styled.div`
   .button {
     outline: none;
     margin-right: 0.5rem;
+    transition: all 0.35s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
   }
   .social-icon--email {
     rect {

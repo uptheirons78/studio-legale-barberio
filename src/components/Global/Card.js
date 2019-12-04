@@ -25,7 +25,7 @@ const Card = ({ post }) => {
             className="card-title text-justify mb-3"
             style={{ fontSize: "1.1rem" }}
           >
-            {post.frontmatter.title}
+            {post.frontmatter.title.toUpperCase()}
           </h5>
           <p className="card-text text-justify" style={{ fontSize: "0.9rem" }}>
             Tempo di lettura: {post.timeToRead} min
