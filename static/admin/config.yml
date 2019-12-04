@@ -23,32 +23,25 @@ collections:
           options: ["sentenza", "articolo"],
           default: ["articolo"]
         }
+      - { label: "Sentenza", name: "sentenza", widget: "file", required: false }
+      - { label: "Link Articolo",
+          name: "link",
+          widget: "string",
+          required: false,
+          hint: "Aggiungere qui il link ad un articolo esterno al sito quando serve"
+        }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages"
-    label: "Pages"
+    label: "Pagine"
     files:
       - file: "content/pages/home/index.md"
-        label: "Home Page"
+        label: "Home"
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Heading", name: "heading", widget: "string"}
           - {label: "Descrizione", name: "description", widget: "string"}
-          - { name: "body", label: "Body", widget: "markdown" }
-      - file: "content/pages/laura/index.md"
-        label: "Laura"
-        name: "laura"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "laura-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - { name: "body", label: "Body", widget: "markdown" }
-      - file: "content/pages/sara/index.md"
-        label: "Sara"
-        name: "sara"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "sara-page"}
-          - {label: "Title", name: "title", widget: "string"}
           - { name: "body", label: "Body", widget: "markdown" }
       - file: "content/pages/chi-siamo/index.md"
         label: "Chi Siamo"
@@ -60,7 +53,7 @@ collections:
           - {label: "Descrizione", name: "description", widget: "string"}
           - { name: "body", label: "Body", widget: "markdown" }
           - {
-              label: "Team Members",
+              label: "Il Nostro Team",
               name: "members",
               widget: "object",
               fields:
@@ -83,7 +76,7 @@ collections:
                 ],
             }
       - file: "content/pages/blog/index.md"
-        label: "Blog Page"
+        label: "Blog"
         name: "blog-page"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-page"}
@@ -92,7 +85,7 @@ collections:
           - {label: "Descrizione", name: "description", widget: "string"}
           - { name: "body", label: "Body", widget: "markdown" }
       - file: "content/pages/sentenze/index.md"
-        label: "Sentenze Page"
+        label: "Sentenze"
         name: "sentenze-page"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "sentenze-page"}
@@ -101,7 +94,7 @@ collections:
           - {label: "Descrizione", name: "description", widget: "string"}
           - { name: "body", label: "Body", widget: "markdown" }
       - file: "content/pages/collaboratori/index.md"
-        label: "Collaboratori Page"
+        label: "Collaboratori"
         name: "collaboratori-page"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "collaboratori-page"}
@@ -135,7 +128,7 @@ collections:
                 ],
             }
       - file: "content/pages/contatti/index.md"
-        label: "Contatti Page"
+        label: "Contatti"
         name: "contatti-page"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contatti-page"}
@@ -160,4 +153,18 @@ collections:
           - {label: "Titolo", name: "title", widget: "string"}
           - {label: "Titolo Header", name: "heading", widget: "string"}
           - {label: "Descrizione", name: "description", widget: "string"}
+          - { name: "body", label: "Body", widget: "markdown" }
+      - file: "content/pages/laura/index.md"
+        label: "Laura"
+        name: "laura"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "laura-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - { name: "body", label: "Body", widget: "markdown" }
+      - file: "content/pages/sara/index.md"
+        label: "Sara"
+        name: "sara"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "sara-page"}
+          - {label: "Title", name: "title", widget: "string"}
           - { name: "body", label: "Body", widget: "markdown" }
