@@ -17,7 +17,7 @@ const CollaboratoriPage = ({ data }) => {
     data.markdownRemark.frontmatter.collaboratori.collaboratori_esterni;
 
   return (
-    <Layout>
+    <Layout lingua="IT">
       <SEO
         title={title}
         description={description}

@@ -19,7 +19,7 @@ const ChiSiamoPage = ({ data }) => {
   const { html: saraBody } = data.sara;
 
   return (
-    <Layout>
+    <Layout lingua="IT">
       <SEO
         title={title}
         description={description}

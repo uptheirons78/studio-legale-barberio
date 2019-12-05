@@ -15,9 +15,10 @@ import { findTitleLeft, findTitleRight } from "../utils/title";
 
 const IndexPage = ({ data }) => {
   const { title, description } = data.markdownRemark.frontmatter;
+  const lingua = "IT";
 
   return (
-    <Layout>
+    <Layout lingua={lingua}>
       <SEO
         title="Home"
         description={description}
@@ -40,8 +41,8 @@ const IndexPage = ({ data }) => {
       </Background>
       <div className="container">
         <div className="row">
-          <Content data={data} />
-          <Aside />
+          <Content data={data} buttonText="Richiedi un appuntamento" />
+          <Aside lingua={lingua} />
         </div>
         <h4 className="heading-2">Decisioni recenti</h4>
         <hr className="mb-4" />

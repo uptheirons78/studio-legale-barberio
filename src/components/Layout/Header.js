@@ -1,15 +1,45 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, graphql, useStaticQuery } from "gatsby";
 import styled from "styled-components";
+import Img from "gatsby-image";
 
 // Assets and Utilities
 import Logo from "../../images/logo-studio-barberio.png";
-import { sitePages } from "../../utils/pages";
+import { sitePages, englishSitePages } from "../../utils/pages";
 
 // Components
 import { Navbar, Nav, Container } from "react-bootstrap";
 
-const Header = () => {
+// Queries
+const query = graphql`
+  query {
+    italy: file(relativePath: { eq: "italy-flag.png" }) {
+      childImageSharp {
+        fixed(width: 24, height: 12) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    uk: file(relativePath: { eq: "united-kingdom-flag.png" }) {
+      childImageSharp {
+        fixed(width: 24, height: 12) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`;
+
+const Header = ({ lingua }) => {
+  const { italy, uk } = useStaticQuery(query);
+
+  // Conditional Rendering Navbar Items based on language prop
+  const flagImg =
+    lingua === "IT" ? uk.childImageSharp.fixed : italy.childImageSharp.fixed;
+
+  const flagLink = lingua === "IT" ? "/en/" : "/";
+  const pages = lingua === "IT" ? sitePages : englishSitePages;
+
   return (
     <StyledNavbar bg="dark" expand="lg" variant="dark" fixed="top">
       <Container>
@@ -24,7 +54,7 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            {sitePages.map(page => (
+            {pages.map(page => (
               <Link
                 key={page.name}
                 to={page.path}
@@ -37,6 +67,9 @@ const Header = () => {
                 {page.name}
               </Link>
             ))}
+            <Link to={flagLink} className="nav-link">
+              <Img fixed={flagImg} alt="language flag" />
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

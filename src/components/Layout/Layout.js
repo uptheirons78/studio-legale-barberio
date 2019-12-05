@@ -13,11 +13,15 @@ const Layout = props => {
   return (
     <ThemeProvider theme={Theme}>
       <GlobalStyle />
-      <Header />
+      <Header lingua={props.lingua} />
       <main>{props.children}</main>
-      <Footer />
+      <Footer lingua={props.lingua} />
     </ThemeProvider>
   );
+};
+
+Layout.defaultProps = {
+  lingua: `IT`,
 };
 
 export default Layout;

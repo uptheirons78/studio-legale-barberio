@@ -25,7 +25,7 @@ const BlogPost = ({ data }) => {
   const { slug } = data.markdownRemark.fields;
 
   return (
-    <Layout>
+    <Layout lingua="IT">
       <SEO
         title={title}
         description={description}

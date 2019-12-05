@@ -9,7 +9,7 @@ import Background from "../components/404/Background";
 import Hero from "../components/Global/Hero";
 
 const NotFoundPage = () => (
-  <Layout>
+  <Layout lingua="IT">
     <SEO
       title="404: Pagina Non Trovata"
       keywords={[

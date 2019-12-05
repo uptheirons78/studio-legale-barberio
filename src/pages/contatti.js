@@ -26,7 +26,7 @@ const ContattiPage = ({ data }) => {
   const { title, heading, description } = data.markdownRemark.frontmatter;
 
   return (
-    <Layout>
+    <Layout lingua="IT">
       <SEO
         title={title}
         description={description}

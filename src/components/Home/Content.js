@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 
-const Content = ({ data }) => {
+const Content = ({ data, buttonText }) => {
   return (
     <HomeContent className="col-md-8 mb-5">
       <h4 className="heading-2">{data.markdownRemark.frontmatter.heading}</h4>
@@ -13,7 +13,7 @@ const Content = ({ data }) => {
         }}
       ></div>
       <Link className="btn btn-primary btn-lg leggi-tutto" to="/contatti">
-        Richiedi un appuntamento &raquo;
+        {buttonText} &raquo;
       </Link>
     </HomeContent>
   );
