@@ -59,9 +59,11 @@ const Footer = () => {
           </div>
         </div>
         <div className="row justify-content-center align-items-center py-3">
-          <p className="m-0 text-center text-muted">
-            Tutti i diritti riservati &copy; Studio Legale Barberio {year}. Web
-            Development{" "}
+          <p className="mx-1 my-0 text-center text-muted">
+            Tutti i diritti riservati &copy; Studio Legale Barberio {year}.{" "}
+          </p>
+          <p className="mx-1 my-0 text-center text-muted">
+            Web Development{" "}
             <a className="mauro" href="https://maurobono.com">
               Mauro Bono
             </a>
@@ -87,8 +89,9 @@ const StyledFooter = styled.footer`
     }
   }
   .footer-widget {
-    @media screen and (max-width: 765px) {
+    @media screen and (max-width: 767px) {
       margin-top: 2rem;
+      padding: 1rem !important;
     }
   }
   .footer-title {
