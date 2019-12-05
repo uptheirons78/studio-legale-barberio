@@ -51,9 +51,9 @@ collections:
               required: false,
               fields: [
                 {label: "Title", name: "en_title", widget: "string"},
-                {label: "Heading", name: "en_heading", widget: "string"}
+                {label: "Heading", name: "en_heading", widget: "string"},
                 {label: "Description", name: "en_description", widget: "string"},
-                { label: "Body", name: "en_body", widget: "markdown" }
+                { label: "Body", name: "en_body", widget: "markdown" },
               ]
             }
       - file: "content/pages/chi-siamo/index.md"
