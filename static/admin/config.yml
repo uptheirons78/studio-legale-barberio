@@ -21,7 +21,7 @@ collections:
           name: "category",
           widget: "select",
           options: ["sentenza", "articolo"],
-          default: ["articolo"]
+          default: "articolo"
         }
       - { label: "Sentenza", name: "sentenza", widget: "file", required: false }
       - { label: "Testo Pulsante Sentenza", name: "sentenza_btn", widget: "string", required: false }
