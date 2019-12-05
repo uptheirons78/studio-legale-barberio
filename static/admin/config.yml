@@ -41,10 +41,21 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Titolo", name: "title", widget: "string"}
           - {label: "Heading", name: "heading", widget: "string"}
           - {label: "Descrizione", name: "description", widget: "string"}
-          - { name: "body", label: "Body", widget: "markdown" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Versione Inglese",
+              name: "english_version",
+              widget: "object",
+              required: false,
+              fields: [
+                {label: "Title", name: "en_title", widget: "string"},
+                {label: "Heading", name: "en_heading", widget: "string"}
+                {label: "Description", name: "en_description", widget: "string"},
+                { label: "Body", name: "en_body", widget: "markdown" }
+              ]
+            }
       - file: "content/pages/chi-siamo/index.md"
         label: "Chi Siamo"
         name: "chi-siamo"
