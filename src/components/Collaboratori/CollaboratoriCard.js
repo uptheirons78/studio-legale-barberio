@@ -1,24 +1,36 @@
 import React from "react";
 import styled from "styled-components";
 
-const CollaboratoriCard = ({ collaboratore }) => {
+const CollaboratoriCard = ({ collaboratore, lingua }) => {
+  // Conditional variables based on website language
+  const t = lingua === "IT" ? collaboratore.titolo : collaboratore.en_titolo;
+  const d =
+    lingua === "IT" ? collaboratore.description : collaboratore.en_description;
+  const f =
+    lingua === "IT"
+      ? `Foro di ${collaboratore.foro}`
+      : `${collaboratore.en_foro}`;
+
+  const address = lingua === "IT" ? "Indirizzo" : "Address";
+  const telephone = lingua === "IT" ? "Telefono" : "Telephone";
+
   return (
     <div className="row mb-5">
       <CollaboratoriInfo className="col-md-4 collaboratori-info">
         <h5>{collaboratore.name.toUpperCase()}</h5>
         <small className="text-muted">
-          {collaboratore.titolo} - Foro di {collaboratore.foro}
+          {t} - {f}
         </small>
         <div className="mt-3">
           {collaboratore.indirizzo && (
             <p>
-              <span className="collaboratori-contatti">Indirizzo:</span>{" "}
+              <span className="collaboratori-contatti">{address}:</span>{" "}
               {collaboratore.indirizzo}
             </p>
           )}
           {collaboratore.telefono && (
             <p>
-              <span className="collaboratori-contatti">Telefono:</span>{" "}
+              <span className="collaboratori-contatti">{telephone}:</span>{" "}
               {collaboratore.telefono}
             </p>
           )}
@@ -37,7 +49,7 @@ const CollaboratoriCard = ({ collaboratore }) => {
         </div>
       </CollaboratoriInfo>
       <CollaboratoriBody className="col-md-8 text-justify">
-        <p>{collaboratore.description}</p>
+        <p>{d}</p>
       </CollaboratoriBody>
     </div>
   );

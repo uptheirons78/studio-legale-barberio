@@ -1,10 +1,15 @@
 ---
 templateKey: collaboratori-page
 title: Collaboratori
+en-title: Partners
 heading: I Nostri Collaboratori
+en-heading: Our Partners
 description: >-
   Da anni collaboriamo in tutta Italia con avvocati impegnati nel settore del
   diritto dell'immigrazione, diritto di asilo e della protezione internazionale.
+en-description: >-
+  For years we have been working all over Italy with lawyers actively involved in anything related immigration law,
+  the right of political asylum and international protection.
 collaboratori:
   collaboratori-esterni:
     - description: >-
@@ -24,15 +29,22 @@ collaboratori:
         riviste giuridiche online tra cui immigrazione.it, della quale è membro
         del comitato di redazione e iussit.com, per la quale cura la sezione
         Immigrazione.
+      en-description: >-
+        Graduated in 1997 at the “University of Federico II” in Naples and registered in Lawyer Board of Naples since 2002. In 2014 qualified to represent people in front of italian Higher Courts. He is involved professionally both in civil and administrative law, in particular he is an expert in protection of human rights and immigration law. He participated as a speaker at conferences and seminars about immigration law and family protection, in particular European Union Law Stage "Andrea Cafiero" held in San Marco di Castellabate (SA). At this meeting he lectured about "Jurisdictional protection of foreigners: resolution of practical cases”. He also collaborates with different online legal journals and blogs including immigrazione.it, of which he is a member of the editorial committee and iussit.com, for which he takes care of the section Immigration.
       email: segreteria@studiolegalemigliaccio.com
       foro: Napoli
+      en-foro: Naples
       indirizzo: 'Piazza Cavour, 139 Napoli – 80137 – Italy'
       name: Luigi Migliaccio
       specializzazione: >-
         Esperto in diritto dell’immigrazione, protezione internazionale e
         diritto di asilo
+      en-specializzazione: >-
+        Expert in immigration law, international protection and
+        the right of political asylum
       telefono: 081 5571137
-      titolo: Avvocato Cassazioni
+      titolo: Avvocato Cassazionista
+      en-titolo: Higher Courts of Justice Lawyer
       website: www.studiolegalemigliaccio.com
     - description: >-
         Avvocato del Foro di Reggio Calabria, abilitato all’esercizio della
@@ -52,16 +64,24 @@ collaboratori:
         comunale e delle società miste. Organizza importanti incontri ed eventi
         per la formazione e l’informazione sul diritto all’inclusione, riportati
         e diffusi dalla stampa e televisione locali.
+      en-description: >-
+        Lawyer of the Court District of Reggio Calabria, authorized to practice profession and represent people in front of italian Higher Courts. President of “ANCADIC Onlus”, national association for the protection of people victims of any kind of discrimination. President of the Provincial “Fish” of Reggio Calabria, Italian Federation for the overcoming of the handicap. Counselor of the “ANFFAS” (association that treats people with intellectual and/or relational disabilities) of Reggio Calabria, is also the coordinator of the Legal department. Legal representative of the Center for helping immigrants people created and directed by “Caritas Diocesana” of Reggio Calabria. He is a collaborator of the administrative law chair of the Mediterranean University of Reggio Calabria for which he wrote several publications. He is also a member of the “FIADEL Legal Department”, a workers' union. He also gained a reputation for important judicial victories in favor of the employees of the municipal administration and mixed companies. He organizes important meetings and events for training and information on the right to inclusion, reported and disseminated by the local media and television.
       email: ''
       foro: Reggio Calabria
+      en-foro: Reggio Calabria
       indirizzo: Corso Garibaldi Giuseppe 468/A - 89127 Reggio Calabria (RC)
       name: Francesco Nucara
       specializzazione: >-
         Abilitato all’esercizio della professione presso le Magistrature
         Superiori si occupa di immigrazione, protezione internazionale e diritto
         di asilo.
+      en-specializzazione: >-
+        Lawyer certified to represent people in front of the italian High Courts of Justice
+        involved in immigration law, international protection and
+        right of political asylum.
       telefono: 0965 332706
       titolo: Avvocato Cassazionista
+      en-titolo: Higher Courts of Justice Lawyer
       website: ''
     - description: >-
         Avvocato del Foro di Reggio Calabria, vanta un’esperienza professionale
@@ -73,15 +93,22 @@ collaboratori:
         Calabria, ed è tra i fondatori dell’associazione Codacons-Confabitare
         Calabria. Si dedica prevalentemente al diritto condominiale, diritto di
         famiglia, diritto del lavoro, contrattualistica.
+      en-description: >-
+        She is a Lawyer in Reggio Calabria Court District with professional experience in civil and criminal law. Specialized in Legal Professions. She is a Company Conciliator and a Civil Mediator. She has been working for Altalex website since 2010 and she wrote also an ebook called “L’Affido Condiviso”. She is Vice-President of Research Center and Criminal Observatory of “Mediterraneo” University in Reggio Calabria and one of the founder of the association “Codacons-Confabitare Calabria”. She is mainly dedicated in condominium law, family law, labour law and contracts.
       email: mariaelenabagnato@libero.it
       foro: Reggio Calabria
+      en-foro: Reggio Calabria
       indirizzo: 'Via San Francesco da Paola, 53 - 89100 Reggio Calabria'
       name: Maria Elena Bagnato
       specializzazione: >-
         Specializzata in Professioni Legali si occupa di diritto condominiale,
         diritto di famiglia, diritto del lavoro e contrattualistica.
+      en-specializzazione: >-
+        Specialized in condominium right and law,
+        family law, labour law and contracts.
       telefono: 348 8032302
       titolo: Avvocato
+      en-titolo: Lawyer
       website: ''
     - description: >-
         Avvocato Cassazionista dal 2008, dal 2011 è mediatore in materia civile
@@ -104,16 +131,24 @@ collaboratori:
         Internazionale e Tutela dei Diritti Umani come Presidente
         dell’Associazione Volontariato Insieme di Montebelluna e come
         vicepresidente dell’Associazione Colombia Vive di Narni.
+      en-description: >-
+        He has been a qualified lawyer to represent people in front of italian Higher Courts since 2008 and since 2011 he has been a civil and business mediator as required by the law D. Lgs. 28/2010. He works mainly in civil law, above all family law, inheritance law, consumer law, accidents, debt collection, contracts, immigration law, and also provides assistance to clients in extra-judicial problems and criminal law. He is qualified in the list of lawyers for the “free legal aid” in the Treviso Court District and member of the Board of Observatory in Family Law in Treviso and also of “Unione Trevigiana dei Giuristi Cattolici”. He has experience also in municipal administration as part of Public Council in the City of Nervesa della Battaglia (1990-2003). He was also the Major of the city Nervesa della Battaglia (1998-2003). He was a member of “Piccola Comunità di Conegliano” an italian association interested in any kind of drugs addicted people problems. He has been interested in International Cooperation and Human Rights Protection since 1994.
       email: info@studiolegaletartini.it
       foro: Treviso
+      en-foro: Treviso
       indirizzo: 'Via De Gasperi, n. 2 - 31044 Montebelluna (TV)'
       name: Francesco Tartini
       specializzazione: >-
         Si occupa di diritto di famiglia, diritto successorio, diritto dei
         consumatori, infortunistica, recupero crediti, contrattualistica,
         diritto dell’immigrazione
+      en-specializzazione: >-
+        He is involved in family law, inheritance law, law of
+        consumers, accidents, debt collection, contracts, and
+        immigration law
       telefono: 0423 22111
       titolo: Avvocato Cassazionista
+      en-titolo: Higher Courts of Justice Lawyer
       website: www.studiolegaletartini.it
     - description: >-
         Avvocato del Foro di Torino, si occupa prevalentemente di diritto
@@ -134,13 +169,18 @@ collaboratori:
         pubblicazioni specialistiche, nonchè supervisore della Ricerca “Betwix
         and between: Turin’s CIE – indagine sui diritti umani all’interno del
         CIE di Torino”, per l’International University College di Torino.
+      en-description: >-
+        Qualified lawyer in the Court District of Turin, he is involved mainly in immigration and criminal law. He studied International Human Rights at Westminster University of London. Researcher in a project called “Il mercato delle droghe in 18 città del Sud del mondo”, created by “Gruppo Abele” superted by “United Nations Interregional Crime and Justice Research Institute” (Unicri) and speaker in several meetings, including the meeting “Quale diritto di asilo a Torino” (“Which kind of asylum rights in Turin”) organized by Amnesty International on the occasion of World Refugee Day and the training course for public defenders of C.I.E. of Milan organized by the Lawyer Board of Milan and by the Criminal Chamber of Milan. Professor at International University College of Turin in “Human Rights and Migration Law Clinic” in collaboration with the University of Turin, University of “Eastern Piemonte” and “A.s.g.i.”. Author of many specialized pubblications and Supervisor of Research “Betwix and between: Turin’s CIE – indagine sui diritti umani all’interno del CIE di Torino” for the International University College of Turin.
       email: ''
       foro: Torino
+      en-foro: Turin
       indirizzo: Via Cavalli n. 28 bis - 10138 Torino
       name: Maurizio Veglio
       specializzazione: Si occupa di diritto dell’immigrazione e diritto penale.
+      en-specializzazione: He is involved in immigration law and criminal law.
       telefono: 011 5826851
       titolo: Avvocato
+      en-titolo: Lawyer
       website: ''
 ---
 Di seguito un elenco di professionisti con i quali collaboriamo per garantire una migliore assistenza ai nostri clienti ed avere la possibilità di operare su tutto il territorio italiano nei casi che li riguardano.

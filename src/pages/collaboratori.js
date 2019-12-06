@@ -11,13 +11,16 @@ import CollaboratoriCard from "../components/Collaboratori/CollaboratoriCard";
 // Utils
 import { findTitleLeft, findTitleRight } from "../utils/title";
 
+// Language
+const lingua = "IT";
+
 const CollaboratoriPage = ({ data }) => {
   const { title, heading, description } = data.markdownRemark.frontmatter;
   const collaboratori =
     data.markdownRemark.frontmatter.collaboratori.collaboratori_esterni;
 
   return (
-    <Layout lingua="IT">
+    <Layout lingua={lingua}>
       <SEO
         title={title}
         description={description}
@@ -43,6 +46,7 @@ const CollaboratoriPage = ({ data }) => {
           <CollaboratoriCard
             key={collaboratore.name}
             collaboratore={collaboratore}
+            lingua={lingua}
           />
         ))}
       </div>
@@ -63,13 +67,17 @@ export const CollaboratoriPageQuery = graphql`
           collaboratori_esterni {
             name
             titolo
+            en_titolo
             foro
+            en_foro
             specializzazione
+            en_specializzazione
             indirizzo
             telefono
             email
             website
             description
+            en_description
           }
         }
       }

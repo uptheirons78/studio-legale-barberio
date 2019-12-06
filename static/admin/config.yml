@@ -121,8 +121,11 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "collaboratori-page"}
           - {label: "Titolo", name: "title", widget: "string"}
+          - {label: "Titolo EN", name: "en-title", widget: "string"}
           - {label: "Titolo Header", name: "heading", widget: "string"}
+          - {label: "Titolo Header EN", name: "en-heading", widget: "string"}
           - {label: "Descrizione", name: "description", widget: "string"}
+          - {label: "Descrizione EN", name: "en-description", widget: "string"}
           - { name: "body", label: "Body", widget: "markdown", required: false }
           - {
               label: "I Nostri Collaboratori",
@@ -138,13 +141,17 @@ collections:
                       [
                         { label: "Nome", name: "name", widget: "string"},
                         { label: "Titolo", name: "titolo", widget: "string"},
+                        { label: "Titolo EN", name: "en-titolo", widget: "string"},
                         { label: "Specializzazione", name: "specializzazione", widget: "string" },
+                        { label: "Specializzazione EN", name: "en-specializzazione", widget: "string" },
                         { label: "Foro", name: "foro", widget: "string"},
+                        { label: "Foro EN", name: "en-foro", widget: "string"},
                         { label: "Indirizzo", name: "indirizzo", widget: "string", required: false },
                         { label: "Telefono", name: "telefono", widget: "string", required: false },
                         { label: "Email", name: "email", widget: "string", required: false },
                         { label: "Website", name: "website", widget: "string", required: false },
                         { label: "Description", name: "description", widget: "text"}
+                        { label: "Description EN", name: "en-description", widget: "text"}
                       ],
                   },
                 ],
