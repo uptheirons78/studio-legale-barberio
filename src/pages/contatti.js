@@ -62,13 +62,13 @@ const ContattiPage = ({ data }) => {
         <div className="row">
           <div className="col-md-8 my-5">
             <Widget>
-              <h5 className="mb-2">Dove Siamo</h5>
+              <h5 className="mb-2">DOVE SIAMO</h5>
               <Mappa coordinate={coordinate} />
             </Widget>
           </div>
           <div className="col-md-4 my-5">
             <Widget>
-              <h5 className="mb-2">Informazioni Utili</h5>
+              <h5 className="mb-2">INFORMAZIONI UTILI</h5>
               <Info />
             </Widget>
           </div>

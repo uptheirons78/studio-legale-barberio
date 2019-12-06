@@ -158,6 +158,15 @@ collections:
           - {label: "Titolo Header", name: "heading", widget: "string"}
           - {label: "Descrizione", name: "description", widget: "string"}
           - { name: "body", label: "Body", widget: "markdown" }
+      - file: "content/pages/contatti/en-index.md"
+        label: "Contact Us"
+        name: "contact-us"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-us"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Header", name: "heading", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - { name: "body", label: "Body", widget: "markdown" }
       - file: "content/pages/privacy/index.md"
         label: "Privacy Policy"
         name: "privacy-policy"

@@ -26,11 +26,11 @@ const EnIndexPage = ({ data }) => {
         keywords={[
           `laura barberio`,
           `studio legale barberio`,
-          `diritto immigrazione`,
-          `asilo politico`,
-          `protezione internazionale`,
-          `gratuito patrocinio`,
-          `diritto degli stranieri`,
+          `immigration law`,
+          `political asylum`,
+          `international protection`,
+          `free legal aid`,
+          `foreigners and refugees law`,
         ]}
       />
       <Background>
