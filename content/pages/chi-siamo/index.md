@@ -2,10 +2,16 @@
 templateKey: chi-siamo
 title: Chi Siamo
 heading: Chi Siamo
-description: Esperti e specializzati nel diritto dell'immigrazione, diritto di asilo, protezione internazionale e nel diritto di famiglia
+description: >-
+  Esperti e specializzati nel diritto dell'immigrazione, diritto di asilo,
+  protezione internazionale e nel diritto di famiglia
 members:
   collaboratori:
-    - descrizione: >-
+    - description: >-
+        She is an expert in immigration law, international protection and the
+        right of political asylum. She deals with international law, criminal
+        law, juvenile and family law.
+      descrizione: >-
         Esperta in diritto dell’immigrazione, protezione internazionale e
         diritto di asilo. Si occupa di diritto internazionale, diritto penale,
         diritto minorile e di famiglia.
@@ -15,13 +21,16 @@ members:
       name: Laura Barberio
       occupazione: Avvocato
       telefono: 366 1909090
-    - descrizione: Si occupa dell’organizzazione e dell’amministrazione dello studio.
+      work: Lawyer
+    - description: She cares about the organization and amministration of our offices.
+      descrizione: Si occupa dell’organizzazione e dell’amministrazione dello studio.
       email: info@studiobarberio.org
       image: /assets/sara-cardigliano.jpg
       imageAlt: sara cardigliano studio legale barberio
       name: Sara Cardigliano
       occupazione: Responsabile Segreteria
       telefono: 338 2037427
+      work: Administrative Officer
 ---
 L’attività dello Studio Legale Barberio si incentra nella tutela dei diritti umani, contro ogni tipo di discriminazione, dalla difesa del diritto alla salute e dei minori alla irragionevole durata dei processi.
 
