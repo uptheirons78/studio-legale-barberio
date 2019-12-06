@@ -31,6 +31,7 @@ const query = graphql`
             imageAlt
             name
             occupazione
+            work
             telefono
           }
         }
@@ -44,8 +45,6 @@ const AboutPageAside = ({ lingua }) => {
   const { collaboratori } = data.team.frontmatter.members;
   const lauraHtml = lingua === "IT" ? data.laura.html : data.en_laura.html;
   const saraHtml = lingua === "IT" ? data.sara.html : data.en_sara.html;
-
-  console.log(collaboratori);
 
   return (
     <div className="col-md-4 px-3 pl-2">
@@ -67,7 +66,9 @@ const AboutPageAside = ({ lingua }) => {
                 />
                 <h5 className="text-center mt-2">{collaboratore.name}</h5>
                 <p className="text-muted text-center mb-2">
-                  {collaboratore.occupazione}
+                  {lingua === "IT"
+                    ? collaboratore.occupazione
+                    : collaboratore.work}
                 </p>
 
                 {collaboratore.name === "Laura Barberio" ? (
