@@ -2,10 +2,10 @@
 templateKey: en-laura-page
 title: Laura
 ---
-ENGLISH Avvocato [Cassazionista](https://www.ordineavvocatiroma.it/wp-content/themes/oar/SchedaIscritto.php?id=1393&elenco=1), Laura Barberio è membro del **Centro di Ricerche Economiche e Giuridiche** presso l’Università Tor Vergata di Roma e **docente** presso lo stesso Ateneo nell’ambito del **MEDIM – Master di II Livello in Economia, Diritto ed Intercultura delle Migrazioni**.
+She is a **lawyer** certificated to represent people in front of italian **High Courts of Justice** and a member of the **Center for Economic and Legal Research** at the Tor Vergata University of Rome and a lecturer at the same university within **MEDIM - II Level Master in Economics, Law and Migration Interculturality**. 
 
-Dal 2009 è **docente** presso il **Master di II livello in “Etnopsichiatria”** attivato dall’Istituto A. T. Beck di Roma nelle materie che riguardano il diritto dell’immigrazione.  Attualmente è membro di due Commissioni del Consiglio dell’Ordine degli Avvocati di Roma.
+Starting 2009 she is also a teacher and lecturer at the **II level Master in "Etnopsychiatry"** created by the AT Beck Institute of Rome concerning immigration law. She is currently a member of two committees of the Lawyers Board of Rome.
 
-Relatrice in numerosi convegni organizzati dalla **Scuola Superiore della Magistratura** e dal **Consiglio dell’Ordine degli Avvocati di Roma** da anni si dedica alla difesa degli stranieri in Italia, con particolare riferimento alla tutela dei diritti umani dei richiedenti la protezione internazionale e delle vittime di tortura.
+She is lecturer of many conferences organized by **Scuola Superiore della Magistratura** (an important italian institution for magistrates and other judicial positions) or by the **Lawyers Board of Rome**. She dedicated herself in **defense of immigrants and foreigners** here in Italy, expecially to the protection of human rights of political refugees asking for international protection or victims of tortures.
 
-È autrice del volume [IL DIRITTO DEGLI STRANIERI](http://www.dikegiuridica.it/prodotto.php?id=995), Manuale operativo con normativa, giurisprudenza, prassi, tabelle riassuntive, schede pratiche e formulari, [DIKE](http://www.dikegiuridica.it/prodotto.php?id=995) 2018.
+She is the author of the book **IL DIRITTO DEGLI STRANIERI**, an operating manual with legislation, jurisprudence, practices, summary tables, practical forms edited by [DIKE](http://www.dikegiuridica.it/prodotto.php?id=995) 2018.
