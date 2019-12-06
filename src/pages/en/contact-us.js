@@ -13,6 +13,9 @@ import Mappa from "../../components/Global/Map";
 // Utils
 import { findTitleLeft, findTitleRight } from "../../utils/title";
 
+// Animations
+import Fade from "../../components/Animations/Fade";
+
 // Coordinate
 const coordinate = [
   {
@@ -49,31 +52,33 @@ const ContactUs = ({ data }) => {
         />
       </Background>
       <div className="container">
-        <div className="row">
-          <div className="col md 12">
-            <div
-              className="text-justify"
-              dangerouslySetInnerHTML={{
-                __html: data.markdownRemark.html,
-              }}
-            ></div>
+        <Fade>
+          <div className="row">
+            <div className="col md 12">
+              <div
+                className="text-justify"
+                dangerouslySetInnerHTML={{
+                  __html: data.markdownRemark.html,
+                }}
+              ></div>
+            </div>
           </div>
-        </div>
-        <hr />
-        <div className="row">
-          <div className="col-md-8 my-5">
-            <Widget>
-              <h5 className="mb-2">WHERE WE ARE</h5>
-              <Mappa coordinate={coordinate} />
-            </Widget>
+          <hr />
+          <div className="row">
+            <div className="col-md-8 my-5">
+              <Widget>
+                <h5 className="mb-2">WHERE WE ARE</h5>
+                <Mappa coordinate={coordinate} />
+              </Widget>
+            </div>
+            <div className="col-md-4 my-5">
+              <Widget>
+                <h5 className="mb-2">INFO</h5>
+                <Info />
+              </Widget>
+            </div>
           </div>
-          <div className="col-md-4 my-5">
-            <Widget>
-              <h5 className="mb-2">INFO</h5>
-              <Info />
-            </Widget>
-          </div>
-        </div>
+        </Fade>
       </div>
     </Layout>
   );

@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 
-const Content = ({ data, buttonText }) => {
+const Content = ({ data, buttonText, lingua }) => {
+  const contactPageLink = lingua === "IT" ? "/contatti" : "/en/contact-us";
+
   return (
     <HomeContent className="col-md-8 mb-5">
       <h4 className="heading-2">{data.markdownRemark.frontmatter.heading}</h4>
@@ -12,7 +14,7 @@ const Content = ({ data, buttonText }) => {
           __html: data.markdownRemark.html,
         }}
       ></div>
-      <Link className="btn btn-primary btn-lg leggi-tutto" to="/contatti">
+      <Link className="btn btn-primary btn-lg leggi-tutto" to={contactPageLink}>
         {buttonText} &raquo;
       </Link>
     </HomeContent>

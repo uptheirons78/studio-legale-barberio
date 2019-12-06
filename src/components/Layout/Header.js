@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery, Link } from "gatsby";
 import styled from "styled-components";
 import Img from "gatsby-image";
 
@@ -57,6 +57,11 @@ const Header = ({ lingua }) => {
             {pages.map(page => (
               <Link
                 key={page.name}
+                cover
+                direction="right"
+                bg="#701212"
+                hex="#701212"
+                duration={1}
                 to={page.path}
                 className="nav-link"
                 activeStyle={{
@@ -67,7 +72,15 @@ const Header = ({ lingua }) => {
                 {page.name}
               </Link>
             ))}
-            <Link to={flagLink} className="nav-link">
+            <Link
+              to={flagLink}
+              className="nav-link"
+              cover
+              direction="left"
+              bg="#701212"
+              hex="#701212"
+              duration={1}
+            >
               <Img fixed={flagImg} alt="language flag" />
             </Link>
           </Nav>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
+
 // Assets
 import SentenzaImage from "../../images/banner-sentenze.jpg";
 import ArticoloImage from "../../images/banner-rassegna-stampa.jpg";

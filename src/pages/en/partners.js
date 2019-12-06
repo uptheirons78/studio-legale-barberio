@@ -8,6 +8,9 @@ import Background from "../../components/Collaboratori/Background";
 import Hero from "../../components/Global/Hero";
 import CollaboratoriCard from "../../components/Collaboratori/CollaboratoriCard";
 
+// Animations
+import Fade from "../../components/Animations/Fade";
+
 // Utils
 import { findTitleLeft, findTitleRight } from "../../utils/title";
 
@@ -47,13 +50,15 @@ const PartnersPage = ({ data }) => {
         />
       </Background>
       <div className="container">
-        {collaboratori.map(collaboratore => (
-          <CollaboratoriCard
-            key={collaboratore.name}
-            collaboratore={collaboratore}
-            lingua={lingua}
-          />
-        ))}
+        <Fade>
+          {collaboratori.map(collaboratore => (
+            <CollaboratoriCard
+              key={collaboratore.name}
+              collaboratore={collaboratore}
+              lingua={lingua}
+            />
+          ))}
+        </Fade>
       </div>
     </Layout>
   );

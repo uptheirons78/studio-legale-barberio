@@ -11,6 +11,9 @@ import Card from "../components/Global/Card";
 // Utils
 import { findTitleLeft, findTitleRight } from "../utils/title";
 
+// Animations
+import Fade from "../components/Animations/Fade";
+
 const Sentenze = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
   const { title, heading, description } = data.markdownRemark.frontmatter;
@@ -38,23 +41,25 @@ const Sentenze = ({ data }) => {
         />
       </Background>
       <div className="container">
-        <div className="row">
-          <div className="col md 12">
-            <div
-              className="text-justify"
-              dangerouslySetInnerHTML={{
-                __html: data.markdownRemark.html,
-              }}
-            ></div>
+        <Fade>
+          <div className="row">
+            <div className="col md 12">
+              <div
+                className="text-justify"
+                dangerouslySetInnerHTML={{
+                  __html: data.markdownRemark.html,
+                }}
+              ></div>
+            </div>
           </div>
-        </div>
-        <h4 className="heading-2 mt-5">Sentenze e decisioni</h4>
-        <hr className="mb-4" />
-        <div className="row my-5">
-          {posts.map(post => (
-            <Card key={post.node.id} post={post.node} />
-          ))}
-        </div>
+          <h4 className="heading-2 mt-5">Sentenze e decisioni</h4>
+          <hr className="mb-4" />
+          <div className="row my-5">
+            {posts.map(post => (
+              <Card key={post.node.id} post={post.node} />
+            ))}
+          </div>
+        </Fade>
       </div>
     </Layout>
   );

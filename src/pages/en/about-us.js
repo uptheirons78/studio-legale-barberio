@@ -9,6 +9,9 @@ import Background from "../../components/ChiSiamo/Background";
 import Content from "../../components/ChiSiamo/Content";
 import AboutPageAside from "../../components/ChiSiamo/Aside";
 
+// Animations
+import Fade from "../../components/Animations/Fade";
+
 // Utils
 import { findTitleLeft, findTitleRight } from "../../utils/title";
 
@@ -42,10 +45,12 @@ const ChiSiamoPage = ({ data }) => {
         />
       </Background>
       <div className="container">
-        <div className="row">
-          <Content lingua={lingua} />
-          <AboutPageAside lingua={lingua} />
-        </div>
+        <Fade>
+          <div className="row">
+            <Content lingua={lingua} />
+            <AboutPageAside lingua={lingua} />
+          </div>
+        </Fade>
       </div>
     </Layout>
   );

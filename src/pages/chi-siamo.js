@@ -12,6 +12,9 @@ import AboutPageAside from "../components/ChiSiamo/Aside";
 // Utils
 import { findTitleLeft, findTitleRight } from "../utils/title";
 
+// Animations
+import Fade from "../components/Animations/Fade";
+
 // Set Language
 const lingua = "IT";
 
@@ -41,10 +44,12 @@ const ChiSiamoPage = ({ data }) => {
         />
       </Background>
       <div className="container">
-        <div className="row">
-          <Content lingua={lingua} />
-          <AboutPageAside lingua={lingua} />
-        </div>
+        <Fade>
+          <div className="row">
+            <Content lingua={lingua} />
+            <AboutPageAside lingua={lingua} />
+          </div>
+        </Fade>
       </div>
     </Layout>
   );

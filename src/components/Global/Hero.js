@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
+// Animations
+import SlideInFromLeft from "../Animations/SlideInFromLeft";
+
 const Hero = ({ titleLeft, titleRight, descrizione }) => {
   return (
     <HeroHeader className="py-5 mb-5">
@@ -8,21 +11,23 @@ const Hero = ({ titleLeft, titleRight, descrizione }) => {
         <div className="container h-100">
           <div className="row h-100 align-items-center">
             <div className="col-lg-12">
-              <h1 className="text-white mt-5 mb-2 hero-title">
-                {titleLeft.toUpperCase()}{" "}
-                <span style={{ color: "#701212" }}>
-                  {titleRight.toUpperCase()}
-                </span>
-              </h1>
-              <p
-                className="mb-5 pr-5 hero-description"
-                style={{
-                  maxWidth: "750px",
-                  width: "100%",
-                }}
-              >
-                {descrizione}
-              </p>
+              <SlideInFromLeft>
+                <h1 className="text-white mt-5 mb-2 hero-title">
+                  {titleLeft.toUpperCase()}{" "}
+                  <span style={{ color: "#701212" }}>
+                    {titleRight.toUpperCase()}
+                  </span>
+                </h1>
+                <p
+                  className="mb-5 pr-5 hero-description"
+                  style={{
+                    maxWidth: "750px",
+                    width: "100%",
+                  }}
+                >
+                  {descrizione}
+                </p>
+              </SlideInFromLeft>
             </div>
           </div>
         </div>

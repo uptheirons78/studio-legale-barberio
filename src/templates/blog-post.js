@@ -10,6 +10,9 @@ import Bio from "../components/BlogPost/Bio";
 import HeroPost from "../components/Global/PostHero";
 import SocialShare from "../components/Global/SocialShare";
 
+// Animations
+import Fade from "../components/Animations/Fade";
+
 const BlogPost = ({ data }) => {
   const {
     title,
@@ -51,61 +54,63 @@ const BlogPost = ({ data }) => {
         className="container my-5"
         style={{ maxWidth: "900px", width: "100%" }}
       >
-        <div className="row">
-          <div
-            className="col-md-12 px-0 mb-2 font-weight-bold text-justify"
-            style={{ color: "#701212" }}
-          >
-            Categoria:{" "}
-            <span style={{ color: "#393939", textTransform: "uppercase" }}>
-              {category}
-            </span>
+        <Fade>
+          <div className="row">
+            <div
+              className="col-md-12 px-0 mb-2 font-weight-bold text-justify"
+              style={{ color: "#701212" }}
+            >
+              Categoria:{" "}
+              <span style={{ color: "#393939", textTransform: "uppercase" }}>
+                {category}
+              </span>
+            </div>
+            <div
+              className="col-md-12 px-0 mb-5 font-weight-bold text-justify"
+              style={{ color: "#701212" }}
+            >
+              In breve: <span style={{ color: "#393939" }}>{description}</span>
+            </div>
+            <div
+              className="text-justify col-md-12 px-0"
+              dangerouslySetInnerHTML={{
+                __html: data.markdownRemark.html,
+              }}
+            ></div>
+            <div className="col-md-12 px-0 mb-5">
+              {sentenza && (
+                <a
+                  className="btn post-button"
+                  href={sentenza}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {sentenza_btn}
+                </a>
+              )}
+              {link && (
+                <a
+                  className="btn post-button"
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {articolo_btn}
+                </a>
+              )}
+            </div>
+            <SocialShare
+              socialConfig={{
+                config: {
+                  title: { title },
+                  url: `https://quizzical-lewin-a6c5f1.netlify.com/blog${slug}`,
+                },
+              }}
+            />
           </div>
-          <div
-            className="col-md-12 px-0 mb-5 font-weight-bold text-justify"
-            style={{ color: "#701212" }}
-          >
-            In breve: <span style={{ color: "#393939" }}>{description}</span>
-          </div>
-          <div
-            className="text-justify col-md-12 px-0"
-            dangerouslySetInnerHTML={{
-              __html: data.markdownRemark.html,
-            }}
-          ></div>
-          <div className="col-md-12 px-0 mb-5">
-            {sentenza && (
-              <a
-                className="btn post-button"
-                href={sentenza}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {sentenza_btn}
-              </a>
-            )}
-            {link && (
-              <a
-                className="btn post-button"
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {articolo_btn}
-              </a>
-            )}
-          </div>
-          <SocialShare
-            socialConfig={{
-              config: {
-                title: { title },
-                url: `https://quizzical-lewin-a6c5f1.netlify.com/blog${slug}`,
-              },
-            }}
-          />
-        </div>
-        <hr />
-        <Bio />
+          <hr />
+          <Bio />
+        </Fade>
       </PostContainer>
     </Layout>
   );

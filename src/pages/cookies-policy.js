@@ -11,6 +11,9 @@ import Hero from "../components/Global/Hero";
 // Utils
 import { findTitleLeft, findTitleRight } from "../utils/title";
 
+// Animations
+import Fade from "../components/Animations/Fade";
+
 const CookiesPolicy = ({ data }) => {
   const { title, heading, description } = data.markdownRemark.frontmatter;
 
@@ -37,14 +40,16 @@ const CookiesPolicy = ({ data }) => {
         />
       </Background>
       <div className="container">
-        <div className="row">
-          <Cookies
-            className="col-md-12 my-5 text-justify"
-            dangerouslySetInnerHTML={{
-              __html: data.markdownRemark.html,
-            }}
-          />
-        </div>
+        <Fade>
+          <div className="row">
+            <Cookies
+              className="col-md-12 my-5 text-justify"
+              dangerouslySetInnerHTML={{
+                __html: data.markdownRemark.html,
+              }}
+            />
+          </div>
+        </Fade>
       </div>
     </Layout>
   );

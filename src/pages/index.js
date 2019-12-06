@@ -13,6 +13,9 @@ import Card from "../components/Global/Card";
 // Utils
 import { findTitleLeft, findTitleRight } from "../utils/title";
 
+// Animations
+import Fade from "../components/Animations/Fade";
+
 const IndexPage = ({ data }) => {
   const { title, description } = data.markdownRemark.frontmatter;
   const lingua = "IT";
@@ -40,17 +43,23 @@ const IndexPage = ({ data }) => {
         />
       </Background>
       <div className="container">
-        <div className="row">
-          <Content data={data} buttonText="Richiedi un appuntamento" />
-          <Aside lingua={lingua} />
-        </div>
-        <h4 className="heading-2">Decisioni recenti</h4>
-        <hr className="mb-4" />
-        <div className="row my-3">
-          {data.allMarkdownRemark.edges.map(post => (
-            <Card key={post.node.id} post={post.node} />
-          ))}
-        </div>
+        <Fade>
+          <div className="row">
+            <Content
+              data={data}
+              buttonText="Richiedi un appuntamento"
+              lingua={lingua}
+            />
+            <Aside lingua={lingua} />
+          </div>
+          <h4 className="heading-2">Decisioni recenti</h4>
+          <hr className="mb-4" />
+          <div className="row my-3">
+            {data.allMarkdownRemark.edges.map(post => (
+              <Card key={post.node.id} post={post.node} />
+            ))}
+          </div>
+        </Fade>
       </div>
     </Layout>
   );

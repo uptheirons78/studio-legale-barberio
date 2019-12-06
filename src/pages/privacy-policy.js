@@ -11,6 +11,9 @@ import Hero from "../components/Global/Hero";
 // Utils
 import { findTitleLeft, findTitleRight } from "../utils/title";
 
+// Animations
+import Fade from "../components/Animations/Fade";
+
 const PrivacyPolicy = ({ data }) => {
   const { title, heading, description } = data.markdownRemark.frontmatter;
   return (
@@ -36,14 +39,16 @@ const PrivacyPolicy = ({ data }) => {
         />
       </Background>
       <div className="container">
-        <div className="row">
-          <Privacy
-            className="col-md-12 my-5 text-justify"
-            dangerouslySetInnerHTML={{
-              __html: data.markdownRemark.html,
-            }}
-          />
-        </div>
+        <Fade>
+          <div className="row">
+            <Privacy
+              className="col-md-12 my-5 text-justify"
+              dangerouslySetInnerHTML={{
+                __html: data.markdownRemark.html,
+              }}
+            />
+          </div>
+        </Fade>
       </div>
     </Layout>
   );

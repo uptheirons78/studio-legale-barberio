@@ -11,6 +11,9 @@ import CollaboratoriCard from "../components/Collaboratori/CollaboratoriCard";
 // Utils
 import { findTitleLeft, findTitleRight } from "../utils/title";
 
+// Animations
+import Fade from "../components/Animations/Fade";
+
 // Language
 const lingua = "IT";
 
@@ -42,13 +45,15 @@ const CollaboratoriPage = ({ data }) => {
         />
       </Background>
       <div className="container">
-        {collaboratori.map(collaboratore => (
-          <CollaboratoriCard
-            key={collaboratore.name}
-            collaboratore={collaboratore}
-            lingua={lingua}
-          />
-        ))}
+        <Fade>
+          {collaboratori.map(collaboratore => (
+            <CollaboratoriCard
+              key={collaboratore.name}
+              collaboratore={collaboratore}
+              lingua={lingua}
+            />
+          ))}
+        </Fade>
       </div>
     </Layout>
   );
