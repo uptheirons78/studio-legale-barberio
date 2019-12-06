@@ -79,13 +79,24 @@ collections:
                         { label: "Foto", name: "image", widget: "image" },
                         { label: "Descrizione Foto", name: "imageAlt", widget: "string" },
                         { label: "Occupazione", name: "occupazione", widget: "string" },
+                        { label: "Work", name: "work", widget: "string" },
                         { label: "Descrizione", name: "descrizione", widget: "string" },
+                        { label: "Description", name: "description", widget: "string" },
                         { label: "Telefono", name: "telefono", widget: "string" },
                         { label: "Email", name: "email", widget: "string" },
                       ],
                   },
                 ],
             }
+      - file: "content/pages/chi-siamo/en-index.md"
+        label: "About Us"
+        name: "about-us"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-us"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Heading", name: "heading", widget: "string"}
+          - {label: "Descrizione", name: "description", widget: "string"}
+          - { name: "body", label: "Body", widget: "markdown" }
       - file: "content/pages/blog/index.md"
         label: "Blog"
         name: "blog-page"
@@ -172,10 +183,24 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "laura-page"}
           - {label: "Title", name: "title", widget: "string"}
           - { name: "body", label: "Body", widget: "markdown" }
+      - file: "content/pages/laura/en-index.md"
+        label: "Laura EN"
+        name: "en-laura"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "en-laura-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - { name: "body", label: "Body", widget: "markdown" }
       - file: "content/pages/sara/index.md"
         label: "Sara"
         name: "sara"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "sara-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - { name: "body", label: "Body", widget: "markdown" }
+      - file: "content/pages/sara/en-index.md"
+        label: "Sara EN"
+        name: "en-sara"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "en-sara-page"}
           - {label: "Title", name: "title", widget: "string"}
           - { name: "body", label: "Body", widget: "markdown" }

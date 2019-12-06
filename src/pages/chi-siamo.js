@@ -12,14 +12,14 @@ import AboutPageAside from "../components/ChiSiamo/Aside";
 // Utils
 import { findTitleLeft, findTitleRight } from "../utils/title";
 
+// Set Language
+const lingua = "IT";
+
 const ChiSiamoPage = ({ data }) => {
   const { title, heading, description } = data.markdownRemark.frontmatter;
-  const { collaboratori } = data.markdownRemark.frontmatter.members;
-  const { html: lauraBody } = data.laura;
-  const { html: saraBody } = data.sara;
 
   return (
-    <Layout lingua="IT">
+    <Layout lingua={lingua}>
       <SEO
         title={title}
         description={description}
@@ -42,12 +42,8 @@ const ChiSiamoPage = ({ data }) => {
       </Background>
       <div className="container">
         <div className="row">
-          <Content data={data} />
-          <AboutPageAside
-            laura={lauraBody}
-            sara={saraBody}
-            collaboratori={collaboratori}
-          />
+          <Content lingua={lingua} />
+          <AboutPageAside lingua={lingua} />
         </div>
       </div>
     </Layout>
@@ -63,25 +59,7 @@ export const pageQuery = graphql`
         title
         heading
         description
-        members {
-          collaboratori {
-            descrizione
-            email
-            image
-            imageAlt
-            name
-            occupazione
-            telefono
-          }
-        }
       }
-      html
-    }
-    laura: markdownRemark(frontmatter: { templateKey: { eq: "laura-page" } }) {
-      html
-    }
-    sara: markdownRemark(frontmatter: { templateKey: { eq: "sara-page" } }) {
-      html
     }
   }
 `;

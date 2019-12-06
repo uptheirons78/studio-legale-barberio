@@ -2,7 +2,7 @@
 templateKey: en-index-page
 title: Studio Legale Barberio
 heading: About Our Office
-description: ' Experts and specialists in immigration law, political asylum law, international protection and family law'
+description: 'Experts and specialists in immigration law, political asylum law, international protection and family law'
 ---
 Our Law Firm named **Studio Legale Barberio** has been dealing for years with international law, criminal law, family law, juvenile law, **immigration law**, international protection and **recognition of political asylum**.
 

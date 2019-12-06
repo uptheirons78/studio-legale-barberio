@@ -1,8 +1,52 @@
 import React from "react";
 import styled from "styled-components";
+import { graphql, useStaticQuery } from "gatsby";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
 
-const AboutPageAside = ({ collaboratori, laura, sara }) => {
+const query = graphql`
+  query {
+    laura: markdownRemark(frontmatter: { templateKey: { eq: "laura-page" } }) {
+      html
+    }
+    en_laura: markdownRemark(
+      frontmatter: { templateKey: { eq: "en-laura-page" } }
+    ) {
+      html
+    }
+    sara: markdownRemark(frontmatter: { templateKey: { eq: "sara-page" } }) {
+      html
+    }
+    en_sara: markdownRemark(
+      frontmatter: { templateKey: { eq: "en-sara-page" } }
+    ) {
+      html
+    }
+    team: markdownRemark(frontmatter: { templateKey: { eq: "chi-siamo" } }) {
+      frontmatter {
+        members {
+          collaboratori {
+            descrizione
+            email
+            image
+            imageAlt
+            name
+            occupazione
+            telefono
+          }
+        }
+      }
+    }
+  }
+`;
+
+const AboutPageAside = ({ lingua }) => {
+  const data = useStaticQuery(query);
+  const { collaboratori } = data.team.frontmatter.members;
+  const lauraHtml = lingua === "IT" ? data.laura.html : data.en_laura.html;
+  const saraHtml = lingua === "IT" ? data.sara.html : data.en_sara.html;
+
+  console.log(collaboratori);
+
   return (
     <div className="col-md-4 px-3 pl-2">
       <h4 className="heading-2">Team Members</h4>
@@ -29,13 +73,13 @@ const AboutPageAside = ({ collaboratori, laura, sara }) => {
                 {collaboratore.name === "Laura Barberio" ? (
                   <div
                     dangerouslySetInnerHTML={{
-                      __html: laura,
+                      __html: lauraHtml,
                     }}
                   ></div>
                 ) : (
                   <div
                     dangerouslySetInnerHTML={{
-                      __html: sara,
+                      __html: saraHtml,
                     }}
                   ></div>
                 )}
