@@ -73,6 +73,10 @@ function SEO({ description, lang, meta, title, keywords }) {
           name: `keywords`,
           content: siteKeywords,
         },
+        {
+          name: `google-site-verification`,
+          content: `${process.env.GATSBY_GOOGLE_VERIFICATION}`,
+        },
       ].concat(meta)}
     />
   );
