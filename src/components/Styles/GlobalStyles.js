@@ -38,6 +38,11 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  .cookies-link {
+    color: #FAA916 !important;
+    transition: all .350s ease-in-out;
+  }
+
 `;
 
 export default GlobalStyle;
