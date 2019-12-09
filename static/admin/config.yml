@@ -6,6 +6,7 @@ media_folder: static/assets
 public_folder: /assets
 
 collections:
+  # Blog Post Type
   - name: "blog"
     label: "Blog"
     folder: "content/blog"
@@ -33,9 +34,11 @@ collections:
         }
       - { label: "Testo Pulsante Articolo", name: "articolo_btn", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
+  # Pages
   - name: "pages"
     label: "Pagine"
     files:
+      # Home in italian
       - file: "content/pages/home/index.md"
         label: "Home"
         name: "index"
@@ -45,6 +48,7 @@ collections:
           - {label: "Heading", name: "heading", widget: "string"}
           - {label: "Descrizione", name: "description", widget: "string"}
           - { label: "Body", name: "body", widget: "markdown" }
+      # Home in english
       - file: "content/pages/home/en-index.md"
         label: "Home EN"
         name: "en-index"
@@ -150,7 +154,7 @@ collections:
                         { label: "Telefono", name: "telefono", widget: "string", required: false },
                         { label: "Email", name: "email", widget: "string", required: false },
                         { label: "Website", name: "website", widget: "string", required: false },
-                        { label: "Description", name: "description", widget: "text"}
+                        { label: "Description", name: "description", widget: "text"},
                         { label: "Description EN", name: "en-description", widget: "text"}
                       ],
                   },
