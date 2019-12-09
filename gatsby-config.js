@@ -5,7 +5,7 @@ require("dotenv").config({ path: `./.env.${env}` });
 module.exports = {
   siteMetadata: {
     title: `Studio Legale Barberio`,
-    siteUrl: `https://www.studiobarberio.org`,
+    siteUrl: `https://www.studiobarberio.org/`,
     author: `Laura Barberio`,
     description: `Ufficio Legale a Roma con Esperienza e Specializzazione nel Diritto dell'Immigrazione, nel diritto di Famiglia, Asilo Politico e Protezione Internazionale.`,
     keywords: [`diritto immigrazione`, `protezione internazionale`],
