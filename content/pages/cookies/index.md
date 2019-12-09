@@ -9,6 +9,10 @@ description: >-
 ---
 #### Informativa estesa sui cookies
 
+Informativa resa, ai sensi del **Regolamento UE 679/2016**, di seguito chiamato "**GDPR**", degli artt. 13 e 122 del Codice in materia di protezione dei dati personali (D.Lgs. 196/03) e del Provvedimento generale del Garante dell'8 maggio 2014 in materia di cookie, agli utenti che si collegano al sito **StudioLegaleBarberio.org** , di seguito chiamato "**sito**".
+
+#### Cosa sono i cookies
+
 I Cookies sono costituiti da porzioni di codice installate all’interno del browser che assistono il Titolare nell’erogazione del servizio in base alle finalità descritte. Alcune delle finalità di installazione dei Cookies potrebbero, inoltre, necessitare del consenso dell’Utente.
 
 #### Uso dei cookies
