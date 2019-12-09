@@ -2,3 +2,7 @@
 
 # Redirect default Netlify subdomain to primary domain
 https://quizzical-lewin-a6c5f1.netlify.com/* https://www.studiobarberio.org/:splat 301!
+
+# Redirects old Wordpress website url
+/it/*     /     301
+/en/*     /en/  301
