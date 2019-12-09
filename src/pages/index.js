@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 
 // Components
 import Layout from "../components/Layout/Layout";
@@ -10,18 +10,11 @@ import Content from "../components/Home/Content";
 import Aside from "../components/Home/Aside";
 import Card from "../components/Global/Card";
 
-import CookieConsent from "react-cookie-consent";
-
 // Utils
 import { findTitleLeft, findTitleRight } from "../utils/title";
 
 // Animations
 import Fade from "../components/Animations/Fade";
-
-// Styles
-const btnStyle = {
-  background: "#FAA916",
-};
 
 const IndexPage = ({ data }) => {
   const { title, description } = data.markdownRemark.frontmatter;
@@ -68,26 +61,6 @@ const IndexPage = ({ data }) => {
           </div>
         </Fade>
       </div>
-      <CookieConsent
-        location="bottom"
-        buttonText="Accetto"
-        buttonStyle={btnStyle}
-        enableDeclineButton
-        declineButtonText="Non Accetto"
-        style={{ background: "#2B373B" }}
-        expires={150}
-      >
-        Utilizziamo cookies proprietari per i nostri servizi e cookies di terze
-        parti per abilitare importanti funzionalità del sito. Visualizza la{" "}
-        <Link to="/privacy-policy" className="cookies-link">
-          Privacy Policy
-        </Link>{" "}
-        o la{" "}
-        <Link to="/cookies-policy" className="cookies-link">
-          Cookies Policy
-        </Link>{" "}
-        per saperne di più.
-      </CookieConsent>
     </Layout>
   );
 };

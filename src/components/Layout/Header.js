@@ -57,7 +57,6 @@ const Header = ({ lingua }) => {
             {pages.map(page => (
               <Link
                 key={page.name}
-                cover
                 direction="right"
                 bg="#701212"
                 hex="#701212"
@@ -75,7 +74,6 @@ const Header = ({ lingua }) => {
             <Link
               to={flagLink}
               className="nav-link"
-              cover
               direction="left"
               bg="#701212"
               hex="#701212"
