@@ -5,6 +5,7 @@ require("dotenv").config({ path: `./.env.${env}` });
 module.exports = {
   siteMetadata: {
     title: `Studio Legale Barberio`,
+    siteUrl: `https://www.studiobarberio.org`,
     author: `Laura Barberio`,
     description: `Ufficio Legale a Roma con Esperienza e Specializzazione nel Diritto dell'Immigrazione, nel diritto di Famiglia, Asilo Politico e Protezione Internazionale.`,
     keywords: [`diritto immigrazione`, `protezione internazionale`],
@@ -25,6 +26,7 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
@@ -64,8 +66,7 @@ module.exports = {
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify`, // make sure to keep it last in the array
   ],
 };
