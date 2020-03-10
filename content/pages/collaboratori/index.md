@@ -52,8 +52,9 @@ collaboratori:
       en-specializzazione: Immigration Lawyer
       en-titolo: Lawyer
       foro: Roma
-      indirizzo: Via del Casale Strozzi n. 31 00100
+      indirizzo: Via del Casale Strozzi n. 31 00100 Roma
       name: Gennyfer Giardi
+      thumbnail: '/assets/gennyfer.jpg'
       specializzazione: Diritto dell'immigrazione
       telefono: 333 4447907
       titolo: Avvocato

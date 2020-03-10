@@ -71,6 +71,7 @@ export const CollaboratoriPageQuery = graphql`
         collaboratori {
           collaboratori_esterni {
             name
+            thumbnail
             titolo
             en_titolo
             foro

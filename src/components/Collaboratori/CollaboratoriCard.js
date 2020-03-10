@@ -21,7 +21,16 @@ const CollaboratoriCard = ({ collaboratore, lingua }) => {
         <small className="text-muted">
           {t} - {f}
         </small>
-        <div className="mt-3">
+        {collaboratore.thumbnail && (
+          <div className="mt-2">
+            <img
+              style={{ width: "60px" }}
+              src={collaboratore.thumbnail}
+              alt={collaboratore.name}
+            />
+          </div>
+        )}
+        <div className="mt-2">
           {collaboratore.indirizzo && (
             <p>
               <span className="collaboratori-contatti">{address}:</span>{" "}

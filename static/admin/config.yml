@@ -119,6 +119,7 @@ collections:
           - {label: "Titolo Header", name: "heading", widget: "string"}
           - {label: "Descrizione", name: "description", widget: "string"}
           - { name: "body", label: "Body", widget: "markdown" }
+       # Collaboratori
       - file: "content/pages/collaboratori/index.md"
         label: "Collaboratori"
         name: "collaboratori-page"
@@ -144,6 +145,7 @@ collections:
                     fields:
                       [
                         { label: "Nome", name: "name", widget: "string"},
+                        { label: "Foto", name: "thumbnail", widget: "image", required: false },
                         { label: "Titolo", name: "titolo", widget: "string"},
                         { label: "Titolo EN", name: "en-titolo", widget: "string"},
                         { label: "Specializzazione", name: "specializzazione", widget: "string" },
