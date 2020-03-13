@@ -11,7 +11,9 @@ description: >-
   dell’art. 3 comma 5 del D.Lgs 251/07.
 category: sentenza
 ---
-Il ricorrente M. E. P., senegalese, impugnava innanzi al Tribunale il provvedimento emesso dalla Commissione Territoriale di Roma che gli aveva negato il riconoscimento della protezione internazionale perché ritenuto non credibile in ragione delle sue contraddizioni . Il suddetto aveva inizialmente dichiarato alla Commissione di essere **omosessuale e vittima di persecuzioni in patria a seguito della divulgazione di informazioni relative al proprio orientamento sessuale all’interno della comunità di appartenenza**. 
+[ Commento a cura di **Marta Mascheroni**, stagista presso lo Studio Legale Barberio. ]
+
+Il ricorrente M. E. P., senegalese, impugnava innanzi al Tribunale il provvedimento emesso dalla Commissione Territoriale di Roma che gli aveva negato il riconoscimento della protezione internazionale perché ritenuto non credibile in ragione delle sue contraddizioni . Il suddetto aveva inizialmente dichiarato alla Commissione di essere **omosessuale e vittima di persecuzioni in patria a seguito della divulgazione di informazioni relative al proprio orientamento sessuale all’interno della comunità di appartenenza**.
 
 Tale divulgazione avrebbe comportato l’impossibilità per il ricorrente, oggetto di minacce di morte, di permanere in Senegal. Successivamente, alle richieste di approfondimento da parte dell’intervistatore, aveva tuttavia negato la propria omosessualità, affermando trattarsi di un equivoco.
 
