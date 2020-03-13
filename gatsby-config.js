@@ -8,6 +8,7 @@ module.exports = {
     siteUrl: `https://www.studiobarberio.org/`,
     author: `Laura Barberio`,
     description: `Ufficio Legale a Roma con Esperienza e Specializzazione nel Diritto dell'Immigrazione, nel diritto di Famiglia, Asilo Politico e Protezione Internazionale.`,
+    image: "/images/banner-sentenze.jpg",
     keywords: [`diritto immigrazione`, `protezione internazionale`],
     social: {
       twitter: `https://twitter.com/laurabarberio`,

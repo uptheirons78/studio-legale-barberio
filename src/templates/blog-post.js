@@ -13,6 +13,10 @@ import SocialShare from "../components/Global/SocialShare";
 // Animations
 import Fade from "../components/Animations/Fade";
 
+// Assets
+import SentenzaImage from "../images/banner-sentenze.jpg";
+import ArticoloImage from "../images/banner-rassegna-stampa.jpg";
+
 const BlogPost = ({ data }) => {
   const {
     title,
@@ -26,12 +30,14 @@ const BlogPost = ({ data }) => {
   } = data.markdownRemark.frontmatter;
 
   const { slug } = data.markdownRemark.fields;
+  const ogImage = category === "sentenza" ? SentenzaImage : ArticoloImage;
 
   return (
     <Layout lingua="IT">
       <SEO
         title={title}
         description={description}
+        image={ogImage}
         keywords={[
           `laura barberio`,
           `studio legale barberio`,
@@ -103,7 +109,7 @@ const BlogPost = ({ data }) => {
               socialConfig={{
                 config: {
                   title: { title },
-                  url: `https://quizzical-lewin-a6c5f1.netlify.com/blog${slug}`,
+                  url: `https://www.studiobarberio.org/blog${slug}`,
                 },
               }}
             />
