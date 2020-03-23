@@ -14,6 +14,29 @@ en-description: >-
 collaboratori:
   collaboratori-esterni:
     - description: >-
+        Laureata alla Facoltà di Giurisprudenza di Roma Tor Vergata, approfondiva la tematica della Tutela della Vittima del Reato sia dal punto di vista sostanziale che processuale alla luce della Legge n. 119 del 2013 in tema di violenza di genere.
+
+        Fin dagli inizi della pratica forense si avvicinava in maniera esclusiva al mondo del diritto penale, vantando a tutt'oggi esperienza professionale, soprattutto, in materia dei reati contro la persona, contro il patrimonio nonché le fattispecie di reato punite e previste dal D.P.R. 309/90.
+
+        A seguito dell’abilitazione alla professione forense, partecipava attivamente e con successo al corso di abilitazione per Difensore d’ufficio tenuto dalla Camera Penale di Roma, con superamento dell’esame finale, determinandone l’iscrizione all’ Albo Nazionale dei Difensori d’Ufficio.
+      email: caterina.lupia87@gmail.com
+      en-description: >-
+        Graduated in Law at the University of Tor Vergata Rome. She studied the subject of the Protection of the Victim of Crimes both on substantial and procedural point of view according to italian law n. 119 of 2013 on gender-based violence.
+
+        From the beginning of the forensic practice he approached exclusively the world of criminal law, having today professional experience, above all, in the field of crimes against the person, against properties as well as the types of crimes punished and foreseen by the italian D.P.R. 309/90.
+
+        Once qualified as a Lawyer in the Court District of Rome, she participated actively and successfully in the qualification course held by the Criminal Chamber of Rome to become a Public Defender, passing the final exam, determining his registration in the National Register of Public Defenders.
+      en-foro: Rome
+      en-specializzazione: Criminal Law
+      en-titolo: Lawyer
+      foro: Roma
+      indirizzo: Via del Casale Strozzi n. 31 00100 Roma
+      name: Caterina Lupia
+      thumbnail: '/assets/caterina-lupia.jpg'
+      specializzazione: Diritto Penale
+      telefono: '347 4092764'
+      titolo: Avvocato
+    - description: >-
         Laureata alla Facoltà di Giurisprudenza di Siena, Avvocato del Foro di
         Roma, vanta un’esperienza professionale in ambito civilistico e penale,
         in particolare in materia di tutela dei diritti umani e di diritto
