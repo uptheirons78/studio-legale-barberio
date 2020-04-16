@@ -1,14 +1,14 @@
 # A redirect rule which routes Netlify [.com extension] to Custom Domain.
 [[redirects]]
-    from = "https://quizzical-lewin-a6c5f1.netlify.com/"
-    to = "https://www.studiobarberio.org/"
-    status = 301
+    from = "https://quizzical-lewin-a6c5f1.netlify.app/*"
+    to = "https://www.studiobarberio.org/:splat"
+    status = 301!
 
 # A redirect rule which routes Netlify [new .app extension] to Custom Domain.
 [[redirects]]
-    from = "https://quizzical-lewin-a6c5f1.netlify.app/"
-    to = "https://www.studiobarberio.org/"
-    status = 301
+    from = "https://quizzical-lewin-a6c5f1.netlify.com/*"
+    to = "https://www.studiobarberio.org/:splat"
+    status = 301!
 
 # A redirect rule for old Wordpress website urls.
 [[redirects]]
