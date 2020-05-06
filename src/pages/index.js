@@ -50,12 +50,12 @@ const IndexPage = ({ data }) => {
               buttonText="Richiedi un appuntamento"
               lingua={lingua}
             />
-            <Aside lingua={lingua} />
+            <Aside lingua={lingua} data={data.aside} />
           </div>
           <h4 className="heading-2">Decisioni recenti</h4>
           <hr className="mb-4" />
           <div className="row my-3">
-            {data.allMarkdownRemark.edges.map(post => (
+            {data.allMarkdownRemark.edges.map((post) => (
               <Card key={post.node.id} post={post.node} />
             ))}
           </div>
@@ -69,6 +69,29 @@ export default IndexPage;
 
 export const IndexPageQuery = graphql`
   query HomePageQuery {
+    aside: allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "aside" } } }
+    ) {
+      nodes {
+        id
+        frontmatter {
+          IT {
+            title
+            first
+            second
+            third
+            fourth
+          }
+          EN {
+            title
+            first
+            second
+            third
+            fourth
+          }
+        }
+      }
+    }
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title

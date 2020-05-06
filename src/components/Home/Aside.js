@@ -8,11 +8,33 @@ import Info from "../Global/Info";
 import LibroImage from "./LibroImage";
 import LauraImage from "./LauraImage";
 
-const Aside = ({ lingua }) => {
+const Aside = ({ lingua, data }) => {
   return (
     <div className="col-md-4 mb-5 pl-5 aside">
       <h4 className="heading-2">News</h4>
       <hr />
+      <Widget className="sidebar-widget mb-5">
+        <h5 style={{ textAlign: "left" }}>
+          {data.nodes[0].frontmatter[`${lingua}`].title}
+        </h5>
+        <p>{data.nodes[0].frontmatter[`${lingua}`].first}</p>
+        <p
+          style={{
+            fontWeight: "bold",
+            marginTop: "5px",
+            marginBottom: "5px",
+            color: "#701212",
+          }}
+        >
+          {data.nodes[0].frontmatter[`${lingua}`].second}
+        </p>
+        <p style={{ marginTop: "5px", marginBottom: "5px" }}>
+          {data.nodes[0].frontmatter[`${lingua}`].third}
+        </p>
+        <p style={{ marginTop: "5px" }}>
+          {data.nodes[0].frontmatter[`${lingua}`].fourth}
+        </p>
+      </Widget>
       <Widget className="sidebar-widget mb-5">
         <h5>Il Diritto degli Stranieri</h5>
         <LibroImage />
@@ -41,18 +63,18 @@ const Widget = styled.div`
   text-align: justify;
 
   h5 {
-    color: ${props => props.theme.black};
+    color: ${(props) => props.theme.black};
   }
 
   p {
-    color: ${props => props.theme.lightBlack};
+    color: ${(props) => props.theme.lightBlack};
     font-size: 0.9rem;
     margin-bottom: 0;
   }
 
   strong,
   a {
-    color: ${props => props.theme.primaryColor};
+    color: ${(props) => props.theme.primaryColor};
     font-weight: 700;
   }
 `;

@@ -47,12 +47,12 @@ const EnIndexPage = ({ data }) => {
         <Fade>
           <div className="row">
             <Content data={data} buttonText="Get in touch" lingua={lingua} />
-            <Aside lingua={lingua} />
+            <Aside lingua={lingua} data={data.aside} />
           </div>
           <h4 className="heading-2">Latest Verdicts</h4>
           <hr className="mb-4" />
           <div className="row my-3">
-            {data.allMarkdownRemark.edges.map(post => (
+            {data.allMarkdownRemark.edges.map((post) => (
               <Card key={post.node.id} post={post.node} />
             ))}
           </div>
@@ -66,6 +66,29 @@ export default EnIndexPage;
 
 export const EnglishIndexPageQuery = graphql`
   query EnglishHomePageQuery {
+    aside: allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "aside" } } }
+    ) {
+      nodes {
+        id
+        frontmatter {
+          IT {
+            title
+            first
+            second
+            third
+            fourth
+          }
+          EN {
+            title
+            first
+            second
+            third
+            fourth
+          }
+        }
+      }
+    }
     markdownRemark(frontmatter: { templateKey: { eq: "en-index-page" } }) {
       frontmatter {
         title
