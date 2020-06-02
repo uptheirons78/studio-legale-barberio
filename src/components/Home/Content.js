@@ -9,7 +9,7 @@ const Content = ({ data, buttonText, lingua }) => {
   return (
     <HomeContent className="col-md-8 mb-5">
       <Link
-        style={{ marginBottom: "2rem" }}
+        style={{ marginBottom: "1rem" }}
         to={covidPageLink}
         className="btn btn-primary btn-md"
       >

@@ -127,13 +127,13 @@ export default BlogPost;
 const PostContainer = styled.div`
   strong,
   a {
-    color: ${props => props.theme.primaryColor};
+    color: ${(props) => props.theme.primaryColor};
     font-weight: 500;
     transition: all 0.35s ease;
   }
 
   a:hover {
-    color: ${props => props.theme.secondaryColor};
+    color: ${(props) => props.theme.secondaryColor};
   }
 
   @media screen and (max-width: 989px) {
@@ -148,7 +148,8 @@ const PostContainer = styled.div`
     padding-right: 2rem !important;
   }
 
-  p {
+  p,
+  li {
     @media screen and (max-width: 770px) {
       font-size: 1rem;
     }
@@ -158,7 +159,7 @@ const PostContainer = styled.div`
   }
 
   .post-button {
-    background-color: ${props => props.theme.primaryColor};
+    background-color: ${(props) => props.theme.primaryColor};
     color: #fff;
     border: none;
     transition: all 0.35s ease;
@@ -166,7 +167,7 @@ const PostContainer = styled.div`
     box-shadow: none !important;
 
     &:hover {
-      background-color: ${props => props.theme.secondaryColor};
+      background-color: ${(props) => props.theme.secondaryColor};
       color: #fff !important;
     }
   }

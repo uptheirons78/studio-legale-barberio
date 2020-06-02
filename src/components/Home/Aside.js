@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import styled from "styled-components";
 
 // Components
@@ -13,6 +14,17 @@ const Aside = ({ lingua, data }) => {
     <div className="col-md-4 mb-5 pl-5 aside">
       <h4 className="heading-2">News</h4>
       <hr />
+      <Widget className="sidebar-widget mb-5">
+        <h5 style={{ textAlign: "left" }}>
+          {data.nodes[0].frontmatter[`${lingua}`].emersioneTitle}
+        </h5>
+        <p>{data.nodes[0].frontmatter[`${lingua}`].emersioneContent}</p>
+        <div style={{ marginTop: "1rem" }}>
+          <Link to={data.nodes[0].frontmatter[`${lingua}`].emersioneLink}>
+            {data.nodes[0].frontmatter[`${lingua}`].emersioneLinkTesto}
+          </Link>
+        </div>
+      </Widget>
       <Widget className="sidebar-widget mb-5">
         <h5 style={{ textAlign: "left" }}>
           {data.nodes[0].frontmatter[`${lingua}`].title}

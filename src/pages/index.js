@@ -81,6 +81,10 @@ export const IndexPageQuery = graphql`
             second
             third
             fourth
+            emersioneTitle
+            emersioneContent
+            emersioneLink
+            emersioneLinkTesto
           }
           EN {
             title
@@ -88,6 +92,10 @@ export const IndexPageQuery = graphql`
             second
             third
             fourth
+            emersioneTitle
+            emersioneContent
+            emersioneLink
+            emersioneLinkTesto
           }
         }
       }

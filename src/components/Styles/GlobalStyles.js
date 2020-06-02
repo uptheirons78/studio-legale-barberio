@@ -11,18 +11,22 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: 1px;
   }
   p {
-    color: ${props => props.theme.lightBlack};
+    color: ${(props) => props.theme.lightBlack};
+    font-size: 1.1rem;
+  }
+  li {
+    color: ${(props) => props.theme.lightBlack};
     font-size: 1.1rem;
   }
 
   strong, a {
-    color: ${props => props.theme.primaryColor};
+    color: ${(props) => props.theme.primaryColor};
     transition: all .350s ease;
   }
 
   .heading-2 {
     text-transform: uppercase;
-    color: ${props => props.theme.black}
+    color: ${(props) => props.theme.black}
   }
 
   .leggi-tutto {
