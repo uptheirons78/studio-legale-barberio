@@ -5,6 +5,8 @@ date: 2020-04-15T09:00:00.000Z
 description: >-
   Un cittadino pakistano assistito dall’Avv. Laura Barberio ottiene il riconoscimento della protezione sussidiaria ex art. 14 D.Lgs 19 novembre 2007 n. 251 in ragione della condizione di conflitto generalizzato e violenza indiscriminata nella regione di appartenenza (Punjab). Il provvedimento del Tribunale di Roma evidenzia la necessità di esaminare i fatti prospettati dall’istante alla luce delle condizioni socio-politiche del Paese di provenienza ai sensi degli artt. 3, c., 3, lett. a del D.Lgs 251/2007.
 category: sentenza
+sentenza: /assets/Decreto_Pakistan__sussidiaria_10_01_20-minified.pdf
+sentenza_btn: Leggi il decreto
 ---
 [ Commento a cura di **Marta Mascheroni**, stagista presso lo Studio Legale Barberio. ]
 
