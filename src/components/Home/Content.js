@@ -4,18 +4,22 @@ import styled from "styled-components";
 
 const Content = ({ data, buttonText, lingua }) => {
   const contactPageLink = lingua === "IT" ? "/contatti" : "/en/contact-us";
-  const covidPageLink = lingua === "IT" ? "/covid" : "/en/covid";
+  // const covidPageLink = lingua === "IT" ? "/covid" : "/en/covid";
+  const flussi2020PageLink =
+    lingua === "IT"
+      ? "/blog/2020-10-14-decreto-flussi-2020/"
+      : "/blog/2020-10-14-decreto-flussi-2020/";
 
   return (
     <HomeContent className="col-md-8 mb-5">
       <Link
         style={{ marginBottom: "1rem" }}
-        to={covidPageLink}
+        to={flussi2020PageLink}
         className="btn btn-primary btn-md"
       >
         {lingua === "IT"
-          ? "Covid-19 e rinnovo del permesso di soggiorno in scadenza"
-          : "Covid-19 and renewal of expiring residency permit"}
+          ? "Decreto Flussi 2020: ingressi consentiti di lavoratori non comunitari"
+          : "Decreto Flussi 2020: ingressi consentiti di lavoratori non comunitari"}
       </Link>
       <h4 className="heading-2">{data.markdownRemark.frontmatter.heading}</h4>
       <hr />
