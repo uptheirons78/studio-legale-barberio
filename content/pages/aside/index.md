@@ -2,24 +2,14 @@
 templateKey: aside
 IT:
   title: Misure di contenimento COVID-19
-  first: Si informano i gentili clienti che lo Studio Legale Barberio sta adottando tutte le misure di contenimento del rischio COVID-19 a tutela di tutti, dotandosi dei dispositivi di protezione necessari. Gli appuntamenti in studio saranno presi solo se strettamente necessari, in osservanza delle misure governative, ma saranno programmati ad orario preciso e si entrerà in studio uno per volta e solo se muniti di guanti e mascherina.
+  first: In ragione del protrarsi dello stato epidemiologico da rischio SARS-COV-2, del diffondersi dell'epidemia e dell'aggravamento della situazione sanitaria in tutto il territorio nazionale, ed in osservanza della normativa vigente, si fa presente che il Nostro Studio Legale da lunedì 26 Ottobre 2020 svolgerà in via esclusiva appuntamenti in videoconferenza.
   second: Sono assolutamente vietati assembramenti e visite senza appuntamento.
-  third: Per ora potete chiedere appuntamento telefonico mandando un messaggio Whatsapp al numero 3382037427 dal lunedi al venerdi dalle ore 9 alle ore 18 indicando nome, cognome e le motivazioni dell'appuntamento. Attendete, per fevore, un messaggio di conferma. Sarete contattati direttamente in videoconferenza dall’Avv. Laura Barberio, che risponderà ai vostri quesiti.
-  fourth: (Se desideri tradurre questo annuncio in una lingua diversa dall'italiano o dall'inglese puoi usare il traduttore di Google con "tasto destro" e poi "traduci")
-  emersioneTitle: 'Emersione Rapporti di Lavoro'
-  emersioneContent: >-
-    E' stato pubblicato in Gazzetta Ufficiale il decreto legge 34/2020 che favorisce l'emersione dei rapporti di lavoro irregolare e dispone il rilascio di un permesso di soggiorno temporaneo a chi lo aveva ma è scaduto dal 31/10/2019. Per informazioni e chiarimenti sulle disposizioni manda un messaggio al 3382037427 e organizzeremo un appuntamento in videochiamata con l'Avv. Laura Barberio che risponderà ai tuoi quesiti.
-  emersioneLink: /blog/2020-06-01-emersione-rapporti-di-lavoro-dl-rilancio/
-  emersioneLinkTesto: Procedura e requisiti
+  third: Solo per ESIGENZE STRAORDINARIE verrà valutata la possibilità di effettuare appuntamenti in presenza, anche considerato che lo studio è dotato di tutti gli strumenti previsti dalla normativa anti-Covid (plexiglass, gel igienizzanti, mascherine e guanti per operatori e per i clienti) e viene garantita sanificazione bisettimanale degli ambienti con ozonizzatore certificato.
+  fourth: Si prega di contattare lo Studio al numero 06 483694 o 338 2037427 per indicare la ragione delle richieste e fornire recapito WhatsApp e Skype. Sarete ricontattati direttamente dall'Avvocato Laura Barberio all'ora concordata. Si ringrazia per la cortese collaborazione.
 EN:
   title: COVID-19 risks containment measures
-  first: We inform our customers that our office is adopting all the COVID-19 risk containment measures to protect everyone, equipping it with all the necessary protective devices. Appointments will be taken only if strictly necessary, in compliance with government measures, but will be scheduled at a precise time and you will enter our office one at a time and only if equipped with gloves and a mask.
+  first: Due to the prolongation of the epidemiological state of SARS-COV-2 risk, the spread of the epidemic and the worsening of the health situation throughout the national territory, and in compliance with current legislation, starting from Monday October 26, 2020 we will exclusively have appointments by videoconference.
   second: Assemblage and visits without an appointment are absolutely prohibited.
-  third: Now you can request a telephone appointment by sending a Whatsapp message to the mobile number 3382037427 starting from Monday to Friday from 9am to 6pm indicating your name, surname and reasons for the appointment. Please wait for a confirmation message. You will be contacted directly with a conference call by the Lawyer Laura Barberio, who will answer any of your questions.
-  fourth: (If you want to translate this message in a language different from italian or english just use Google Translate with "right click" and then "translate")
-  emersioneTitle: 'Procedure for Transforming Undeclared Work into Regular Employment'
-  emersioneContent: >-
-    Decree Law n. 34/2020 was published in the Italian Official Gazette to facilitate transformation of undeclared work into regular employment and provide the issue of a temporary residence permit to those who already had it but expired on 31 October 2019. For any kind of informations and clarifications about this procedure just send a message to our mobile number 3382037427 and we will organize a video chat appointment with the Lawyer Laura Barberio. She will answer all of your questions.
-  emersioneLink: /blog/2020-06-01-emersione-rapporti-di-lavoro-dl-rilancio/
-  emersioneLinkTesto: Procedure and requirements
+  third: Only for EXTRAORDINARY NEEDS, the possibility of making face-to-face appointments will be evaluated, also considering that our office is equipped with all the tools required by the anti-Covid legislation (plexiglass, sanitizing gels, masks and gloves for operators and customers) and is guaranteed bi-weekly sanitation of the rooms with certified ozonator.
+  fourth: Please contact us at our telephone numbers 06 483694 or 338 2037427 to tell us your requests and provide us your WhatsApp and Skype contact details. Then you will be contacted directly by the Lawyer Laura Barberio at the agreed time. Thanks for your kind cooperation.
 ---
