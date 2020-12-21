@@ -4,23 +4,30 @@ import styled from "styled-components";
 
 const Content = ({ data, buttonText, lingua }) => {
   const contactPageLink = lingua === "IT" ? "/contatti" : "/en/contact-us";
-  // const covidPageLink = lingua === "IT" ? "/covid" : "/en/covid";
-  const flussi2020PageLink =
+  const corsoPageLink =
     lingua === "IT"
-      ? "/blog/2020-10-14-decreto-flussi-2020/"
-      : "/blog/2020-10-14-decreto-flussi-2020/";
+      ? "/blog/2020-12-21-corso-diritto-immigrazione-2021/"
+      : "/blog/2020-12-21-corso-diritto-immigrazione-2021/";
+
+  const Banner = () => {
+    if (lingua === "IT") {
+      return (
+        <Link
+          style={{ marginBottom: "1rem" }}
+          to={corsoPageLink}
+          className="btn btn-primary btn-md"
+        >
+          Corso di formazione in diritto dell'immigrazione 2021
+        </Link>
+      );
+    } else {
+      return null;
+    }
+  };
 
   return (
     <HomeContent className="col-md-8 mb-5">
-      <Link
-        style={{ marginBottom: "1rem" }}
-        to={flussi2020PageLink}
-        className="btn btn-primary btn-md"
-      >
-        {lingua === "IT"
-          ? "Decreto Flussi 2020: ingressi consentiti di lavoratori non comunitari"
-          : "Decreto Flussi 2020: ingressi consentiti di lavoratori non comunitari"}
-      </Link>
+      <Banner />
       <h4 className="heading-2">{data.markdownRemark.frontmatter.heading}</h4>
       <hr />
       <div
