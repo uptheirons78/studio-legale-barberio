@@ -13,6 +13,31 @@ const Aside = ({ lingua, data }) => {
     <div className="col-md-4 mb-5 pl-5 aside">
       <h4 className="heading-2">News</h4>
       <hr />
+      {lingua === "IT" && (
+        <Widget className="sidebar-widget mb-5">
+          <h5 style={{ textAlign: "left" }}>
+            Corso di Formazione in Diritto dell'Immigrazione
+          </h5>
+          <p>
+            Anche quest'anno il{" "}
+            <strong>Consiglio dell'Ordine degli Avvocati di Roma</strong> in
+            collaborazione con il CREG - Centro di Ricerche economiche e
+            giuridiche dell'Università di Tor Vergata ha organizzato il Corso di
+            formazione in diritto dell'Immigrazione.
+          </p>
+          <p style={{ marginTop: "5px", marginBottom: "5px" }}>
+            Nel Comitato scientifico l'avv. Laura Barberio, l'avv. Fabio Maria
+            Galiani, il Prof. Avv. Paolo Iafrate e l'Avv. Roberto Maria Meola.{" "}
+          </p>
+          <a
+            href="/assets/locandina-corso-immigrazione-2021.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Leggi il programma
+          </a>
+        </Widget>
+      )}
       <Widget className="sidebar-widget mb-5">
         <h5 style={{ textAlign: "left" }}>
           {data.nodes[0].frontmatter[`${lingua}`].title}
