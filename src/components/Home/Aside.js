@@ -36,6 +36,17 @@ const Aside = ({ lingua, data }) => {
           >
             Leggi il programma
           </a>
+          <p style={{ marginTop: "5px", marginBottom: "5px" }}>
+            Durante l’incontro del 23 aprile 2021 parteciperà in qualità di
+            relatrice anche l’Avvocato Laura Barberio.{" "}
+          </p>
+          <a
+            href="https://bit.ly/3n7SPG5"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Programma della lezione
+          </a>
         </Widget>
       )}
       <Widget className="sidebar-widget mb-5">

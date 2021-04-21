@@ -49,8 +49,11 @@ In particolare, tutela il diritto di asilo, assistendo i richiedenti la protezio
 
 La sua attività è prevalentemente orientata alla tutela delle vittime di tortura, anche grazie all’ausilio di psicologi ed etnopsichiatri; difende le vittime di schiavitù e di tratta, di persecuzione per motivi religiosi, politici, per orientamento sessuale, per appartenenza a gruppi minoritari ed è diretta alla difesa alle libertà fondamentali, tra cui quella di espressione e di stampa. Sostiene la lotta contro le mutilazioni genitali femminili e ogni altra forma di violenza e violazione dei diritti umani contro le donne e i minori.
 
-L’avvocato Laura Barberio è iscritta nelle liste dei difensori per i non abbienti in materia penale, di diritto di famiglia e in diritto dell’immigrazione, che consente la [richiesta di ammissione al patrocinio a spese dello Stato](http://www.giustizia.it/giustizia/it/mg_3_7_2.wp) a chi non raggiunga il reddito annuo imponibile di Euro 11.528,41.
+L’avvocato Laura Barberio è iscritta nelle liste dei difensori per i non abbienti in materia penale, di diritto di famiglia e in diritto dell’immigrazione, che consente la [richiesta di ammissione al patrocinio a spese dello Stato](http://www.giustizia.it/giustizia/it/mg_3_7_2.wp) a chi non raggiunga il reddito annuo imponibile di Euro 11.746,68.
 
-Recentemente si è tenuto a Roma il primo **Corso per Avvocati Immigrazionisti**, organizzato dal Consiglio dell’Ordine degli Avvocati di Roma – Progetto Famiglia Minori e Immigrazione. **Tra i membri del Comitato Scientifico anche l’ Avv. Laura Barberio che è stata relatrice nell’ambito del Corso**. Il corso, come sostenuto dal Coordinatore Vicario Avv. Roberto Maria Meola, è volto alla formazione di una Avvocatura di qualità nel settore del diritto dell’Immigrazione, una branca del diritto estremamente complessa e sempre più attuale.
+Tra i vari convegni dove l'Avvocato Laura Barberio ha partecipato in qualità di relatrice si ricordano:
 
-L’Avvocato Laura Barberio è stata relatrice durante un importante convegno organizzato dal Consiglio dell’Ordine degli Avvocati di Roma tenutosi lunedì 17 febbraio 2014 presso l’Aula Avvocati del Palazzo di Giustizia di Piazza Cavour e che aveva come argomento l’immigrazione ed il patrocinio a spese dello Stato, dal titolo: [“Immigrazione e Patrocinio a Spese dello Stato”](http://www.ordineavvocatiroma.it/Documenti/20-2014.pdf)
+- il primo **Corso per Avvocati Immigrazionisti**, organizzato dal Consiglio dell’Ordine degli Avvocati di Roma – Progetto Famiglia Minori e Immigrazione;
+
+- il convegno organizzato dal Consiglio dell’Ordine degli Avvocati di Roma su immigrazione ed il patrocinio a spese dello Stato, dal titolo: [“Immigrazione e Patrocinio a Spese dello Stato”](http://www.ordineavvocatiroma.it/Documenti/20-2014.pdf);
+

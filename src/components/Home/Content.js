@@ -12,13 +12,12 @@ const Content = ({ data, buttonText, lingua }) => {
   const Banner = () => {
     if (lingua === "IT") {
       return (
-        <Link
-          style={{ marginBottom: "1rem" }}
-          to={corsoPageLink}
-          className="btn btn-primary btn-md"
-        >
-          Corso di formazione in diritto dell'immigrazione 2021
-        </Link>
+        <div style={{ marginBottom: "1rem" }}>
+          <Link to={corsoPageLink}>
+            Corso di formazione tecnico-pratica in diritto dell'immigrazione
+            2021 - C.O.A. NAPOLI
+          </Link>
+        </div>
       );
     } else {
       return null;

@@ -14,8 +14,8 @@ Lo Studio Legale Barberio collabora attivamente con numerose associazioni tra cu
 
 Lo **Studio Legale Barberio** si avvale anche di **esperti collaboratori esterni** specializzati in diritto civile, diritto del lavoro e previdenziale, diritto tributario, diritto della navigazione, diritto condominiale, diritto bancario, diritto dell’immigrazione, protezione internazionale e riconoscimento dell’asilo politico e di una fitta rete di corrispondenti in tutta Italia.
 
-L’Avvocato Laura Barberio ha partecipato in qualità di docente al **Master MEDIM** presso l’**Università di Tor Vergata – Roma**, nonché in qualità di relatore a numerosi convegni organizzati dal Consiglio dell’Ordine degli Avvocati di Roma in materia di diritto dell’immigrazione.
+L’Avvocato Laura Barberio è componente della Sezione Immigrazione, Asilo e Diritti Umani del **C.R.E.D.**, Centro di Ricerche Economiche e Giuridiche presso **l'Università Tor Vergata di Roma** e docente presso lo stesso ateneo nell'ambito del **MEDIM - Master di II Livello in Economia, Diritto e Intercultura delle Migrazioni**.
 
-Nel marzo del 2016 l’Avvocato Laura Barberio ha preso parte, in qualità di relatore, al Terzo Incontro del **Corso di Formazione** a più voci di approfondimento in materia di IMMIGRAZIONE relativo a[ “La Disciplina delle Espulsioni Amministrative”](/assets/immigrazione-terzo-incontro-31-marzo-2016-la-disciplina-delle-espulsioni-amministrative.pdf) presso la Corte d’Appello di Roma – Aula Europa organizzato dalla Scuola Superiore della Magistratura e dall’Ordine degli Avvocati di Roma.
+Dal 2009 è docente presso il Master di II Livello in Etnopsichiatria attivato dall'Istituto A. T. Beck di Roma in materia di diritto dell'immigrazione. Ha partecipato in qualità di relatore a numerosi convegni organizzati dal Consiglio dell’Ordine degli Avvocati di Roma in materia di diritto dell’immigrazione.
 
-Nello specifico l’Avvocato Laura Barberio ha relazionato in merito a **“I Rapporti tra Espulsione e Protezione Internazionale”**.
+
