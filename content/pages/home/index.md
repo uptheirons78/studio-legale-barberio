@@ -14,7 +14,7 @@ Lo Studio Legale Barberio collabora attivamente con numerose associazioni tra cu
 
 Lo **Studio Legale Barberio** si avvale anche di **esperti collaboratori esterni** specializzati in diritto civile, diritto del lavoro e previdenziale, diritto tributario, diritto della navigazione, diritto condominiale, diritto bancario, diritto dell’immigrazione, protezione internazionale e riconoscimento dell’asilo politico e di una fitta rete di corrispondenti in tutta Italia.
 
-L’Avvocato Laura Barberio è componente della Sezione Immigrazione, Asilo e Diritti Umani del **C.R.E.D.**, Centro di Ricerche Economiche e Giuridiche presso **l'Università Tor Vergata di Roma** e docente presso lo stesso ateneo nell'ambito del **MEDIM - Master di II Livello in Economia, Diritto e Intercultura delle Migrazioni**.
+L’Avvocato Laura Barberio è componente della Sezione Immigrazione, Asilo e Diritti Umani del **C.R.E.G.**, Centro di Ricerche Economiche e Giuridiche presso **l'Università Tor Vergata di Roma** e docente presso lo stesso ateneo nell'ambito del **MEDIM - Master di II Livello in Economia, Diritto e Intercultura delle Migrazioni**.
 
 Dal 2009 è docente presso il Master di II Livello in Etnopsichiatria attivato dall'Istituto A. T. Beck di Roma in materia di diritto dell'immigrazione. Ha partecipato in qualità di relatore a numerosi convegni organizzati dal Consiglio dell’Ordine degli Avvocati di Roma in materia di diritto dell’immigrazione.
 

@@ -148,17 +148,16 @@ const LauraText = () => (
   <p className="mt-3">
     L’Avv. Laura Barberio è membro del Comitato scientifico e relatrice
     nell’ambito del{" "}
-    <strong>Corso di aggiornamento per avvocati immigrazionisti </strong>
-    promosso dall’Ordine degli Avvocati di Roma. Il corso si svolge ogni lunedì
-    presso la Corte di Cassazione dalle ore 15.30 alle ore 18.30.
+    <strong>Corso di formazione in diritto dell'immigrazione </strong>
+    promosso dall’Ordine degli Avvocati di Roma in collaborazione con il
+    C.R.E.G.
   </p>
 );
 
 const LauraEnglishText = () => (
   <p className="mt-3">
     The Lawyer Laura Barberio is member of a Lawyers Scientific Committee and a
-    lecturer of the <strong>Immigration Lawyers Refresher Course</strong>{" "}
-    promoted by the Lawyers Board of Rome (Italy). The course takes place every
-    Monday at Corte di Cassazione in Rome from 15.30 to 18.30.
+    lecturer of the <strong>Immigration Lawyers Course</strong> promoted by the
+    Lawyers Board of Rome (Italy) and C.R.E.G.
   </p>
 );
