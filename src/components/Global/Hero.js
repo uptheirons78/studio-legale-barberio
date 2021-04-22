@@ -7,7 +7,7 @@ import SlideInFromLeft from "../Animations/SlideInFromLeft";
 const Hero = ({ titleLeft, titleRight, descrizione }) => {
   return (
     <HeroHeader className="py-5 mb-5">
-      <div className="bg-overlay">
+      <div className="overlay-hd">
         <div className="container h-100">
           <div className="row h-100 align-items-center">
             <div className="col-lg-12">
@@ -68,7 +68,7 @@ const HeroHeader = styled.header`
   }
 
   p {
-    color: ${props => props.theme.white};
+    color: ${(props) => props.theme.white};
     font-size: 1.2rem;
 
     @media screen and (max-width: 600px) {

@@ -4,7 +4,7 @@ import BackgroundImage from "gatsby-background-image";
 
 const query = graphql`
   query {
-    file(relativePath: { eq: "sb-home.jpg" }) {
+    file(relativePath: { eq: "cassazione.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
