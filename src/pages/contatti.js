@@ -5,7 +5,7 @@ import styled from "styled-components";
 // Components
 import Layout from "../components/Layout/Layout";
 import SEO from "../components/seo";
-import Background from "../components/Contatti/Background";
+// import Background from "../components/Contatti/Background";
 import Hero from "../components/Global/Hero";
 import Info from "../components/Global/Info";
 import Mappa from "../components/Global/Map";
@@ -43,13 +43,20 @@ const ContattiPage = ({ data }) => {
           `diritto degli stranieri`,
         ]}
       />
-      <Background>
+      <div
+        style={{
+          backgroundImage: `url(${data.banner.publicURL})`,
+          backgroundPosition: `center`,
+          backgroundSize: `cover`,
+          backgroundRepeat: `no-repeat`,
+        }}
+      >
         <Hero
           titleLeft={findTitleLeft(heading)}
           titleRight={findTitleRight(heading)}
           descrizione={description}
         />
-      </Background>
+      </div>
       <div className="container">
         <Fade>
           <div className="row">
@@ -89,18 +96,18 @@ const Widget = styled.div`
   text-align: justify;
 
   h5 {
-    color: ${props => props.theme.black};
+    color: ${(props) => props.theme.black};
   }
 
   p {
-    color: ${props => props.theme.lightBlack};
+    color: ${(props) => props.theme.lightBlack};
     font-size: 0.9rem;
     margin-bottom: 0;
   }
 
   strong,
   a {
-    color: ${props => props.theme.primaryColor};
+    color: ${(props) => props.theme.primaryColor};
     font-weight: 700;
   }
 `;
@@ -114,6 +121,9 @@ export const ContattiPageQuery = graphql`
         description
       }
       html
+    }
+    banner: file(relativePath: { eq: "laura-contatti-banner-01.jpg" }) {
+      publicURL
     }
   }
 `;

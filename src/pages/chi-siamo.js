@@ -5,7 +5,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout/Layout";
 import SEO from "../components/seo";
 import Hero from "../components/Global/Hero";
-import Background from "../components/ChiSiamo/Background";
+// import Background from "../components/ChiSiamo/Background";
 import Content from "../components/ChiSiamo/Content";
 import AboutPageAside from "../components/ChiSiamo/Aside";
 
@@ -36,13 +36,20 @@ const ChiSiamoPage = ({ data }) => {
           `diritto degli stranieri`,
         ]}
       />
-      <Background>
+      <div
+        style={{
+          backgroundImage: `url(${data.banner.publicURL})`,
+          backgroundPosition: `top center`,
+          backgroundSize: `cover`,
+          backgroundRepeat: `no-repeat`,
+        }}
+      >
         <Hero
           titleLeft={findTitleLeft(heading)}
           titleRight={findTitleRight(heading)}
           descrizione={description}
         />
-      </Background>
+      </div>
       <div className="container">
         <Fade>
           <div className="row">
@@ -65,6 +72,9 @@ export const pageQuery = graphql`
         heading
         description
       }
+    }
+    banner: file(relativePath: { eq: "laura-home-banner-4.jpg" }) {
+      publicURL
     }
   }
 `;

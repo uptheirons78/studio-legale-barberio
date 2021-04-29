@@ -1,10 +1,11 @@
 import React from "react";
 import { graphql } from "gatsby";
+import styled from "styled-components";
 
 // Components
 import Layout from "../components/Layout/Layout";
 import SEO from "../components/seo";
-import Background from "../components/Home/Background";
+// import Background from "../components/Home/Background";
 import Hero from "../components/Global/Hero";
 import Content from "../components/Home/Content";
 import Aside from "../components/Home/Aside";
@@ -15,6 +16,18 @@ import { findTitleLeft, findTitleRight } from "../utils/title";
 
 // Animations
 import Fade from "../components/Animations/Fade";
+
+const StyledBackground = styled.div`
+  background-image: url(${(props) => props.banner});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (max-width: 480px) {
+    background-image: url(${(props) => props.mobileBanner});
+    background-position: center right;
+  }
+`;
 
 const IndexPage = ({ data }) => {
   const { title, description } = data.markdownRemark.frontmatter;
@@ -35,13 +48,16 @@ const IndexPage = ({ data }) => {
           `diritto degli stranieri`,
         ]}
       />
-      <Background>
+      <StyledBackground
+        banner={data.banner.publicURL}
+        mobileBanner={data.mobileBanner.publicURL}
+      >
         <Hero
           titleLeft={findTitleLeft(title)}
           titleRight={findTitleRight(title)}
           descrizione={description}
         />
-      </Background>
+      </StyledBackground>
       <div className="container">
         <Fade>
           <div className="row">
@@ -91,6 +107,12 @@ export const IndexPageQuery = graphql`
           }
         }
       }
+    }
+    banner: file(relativePath: { eq: "laura-home-banner-3.jpg" }) {
+      publicURL
+    }
+    mobileBanner: file(relativePath: { eq: "laura-home-mobile.jpg" }) {
+      publicURL
     }
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
