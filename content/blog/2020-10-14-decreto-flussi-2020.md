@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: 'DECRETO FLUSSI 2020'
 date: 2020-10-14T09:00:00.000Z
 description: >-

@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: CASSAZIONE CIVILE SENTENZA N.164 DEL 5 GENNAIO 2018
 date: 2018-02-23T08:47:00.000Z
 description: >-

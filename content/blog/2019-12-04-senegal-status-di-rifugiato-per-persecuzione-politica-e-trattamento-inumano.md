@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: 'Senegal: status di rifugiato per persecuzione politica e trattamento inumano'
 date: 2015-10-01T10:48:00.000Z
 description: >-
@@ -18,7 +19,7 @@ Il Giudice accorda **valore probatorio alla relazione medica del “Centro Astal
 
 Accorda, inoltre, **valore probatorio alle informazioni reperibili in rete** e relative alla situazione di grave instabilità nella regione del Casamance, dalla quale il ricorrente proviene, teatro di rivolte e disordini a carattere quotidiano e totalmente sotto il controllo delle forze ribelli ed indipendentiste del MFDC.
 
-Giudice: **Tribunale di Roma, I Sezione Civile, Dott.ssa Pratesi**. 
+Giudice: **Tribunale di Roma, I Sezione Civile, Dott.ssa Pratesi**.
 
 Decisione: **Ordinanza rep. n. 23624 del 2013**.
 

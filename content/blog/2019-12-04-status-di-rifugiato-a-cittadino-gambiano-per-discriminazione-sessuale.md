@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: STATUS DI RIFUGIATO A CITTADINO GAMBIANO PER DISCRIMINAZIONE SESSUALE
 date: 2017-01-11T09:28:00.000Z
 description: >-
@@ -14,7 +15,8 @@ articolo_btn: Amnesty International Rapporto Gambia
 ---
 In Gambia l’**omosessualità è considerata un reato punito dall’art. 144 del codice penale gambiano**.
 
-Nel corso del giudizio di primo grado, il Tribunale di Roma “ha osservato che la vicenda narrata dal ricorrente, secondo cui egli era fuggito dal Gambia a causa della sua omosessualità, … non aveva ricevuto i necessari riscontri ed appariva poco credibile”.
+
+Nel corso del giudizio di primo grado, il Tribunale di Roma “ha osservato che la vicenda narrata dal ricorrente, secondo cui egli era fuggito dal Gambia a causa della sua omosessualità, … non aveva ricevuto i necessari riscontri ed appariva poco credibile”.
 
 Nel caso in esame, **il reclamante ha sostenuto che nel proprio Paese era anche stato arrestato a causa della sua omosessualità**. Ciò nonostante il Tribunale aveva rigettato le domande.
 
@@ -24,7 +26,7 @@ E poco più avanti, la Corte osserva “**_che dal 2014 in Gambia sia previsto l
 
 Per questi motivi, la Corte d’Appello di Roma riconosce lo **status di rifugiato politico** ai sensi della Convenzione di Ginevra **per persecuzioni ad un omosessuale** sul presupposto che “_**la circostanza per cui l’omosessualità sia considerata un reato dall’ordinamento giuridico del Paese di provenienza… è rilevante**, costituendo una **grave ingerenza nella vita privata dei cittadini omosessuali**, che compromette grandemente la loro libertà personale e li pone in una situazione oggettiva di persecuzione, tale da giustificare la concessione della protezione internazionale_”.
 
-Giudice: **Corte d’Appello di Roma, I Sezione Civile** 
+Giudice: **Corte d’Appello di Roma, I Sezione Civile**
 
 Decisione: **Sentenza n. 6371/2016 il 27/10/2016**
 

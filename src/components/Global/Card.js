@@ -40,7 +40,7 @@ const Card = ({ post }) => {
           style={{ backgroundColor: "#fff", borderTop: "none" }}
         >
           <Link
-            to={`/blog/${post.fields.slug}`}
+            to={`/blog${post.fields.slug}`}
             className="btn leggi-tutto"
             style={{
               backgroundColor: "#701212",
@@ -75,7 +75,7 @@ const Inner = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    background: ${props => props.theme.primaryColor};
+    background: ${(props) => props.theme.primaryColor};
     color: #fff;
     font-weight: 600;
     letter-spacing: 1px;

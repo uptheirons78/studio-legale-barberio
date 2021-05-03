@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: L’INFERNO DI UN MIGRANTE DEL GHANA ALLE PRESE CON LA BUROCRAZIA CRUDELE
 date: 2015-02-09T15:42:00.000Z
 description: >-

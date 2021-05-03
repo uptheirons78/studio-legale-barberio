@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: I Requisiti per l'ingresso in Italia dei cittadini non comunitari
 date: 2020-05-26T08:35:00.000Z
 description: >-

@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: Le varie tipologie dei Visti d'ingresso in Italia
 date: 2020-05-25T08:35:00.000Z
 description: >-

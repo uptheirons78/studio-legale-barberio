@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: >-
   Corte di Cassazione sulla credibilità del richiedente la protezione internazionale
 date: 2021-04-21T09:00:00.000Z

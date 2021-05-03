@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: 'EMERSIONE DEI RAPPORTI DI LAVORO EX D.L. 34/2020'
 date: 2020-06-01T11:49:00.000Z
 description: >-

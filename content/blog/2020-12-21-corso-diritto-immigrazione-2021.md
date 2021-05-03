@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: "CORSO DI FORMAZIONE TECNICO-PRATICA IN DIRITTO DELL'IMMIGRAZIONE"
 date: 2020-12-21T08:47:00.000Z
 description: >-

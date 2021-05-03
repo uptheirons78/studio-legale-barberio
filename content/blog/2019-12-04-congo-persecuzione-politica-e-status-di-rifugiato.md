@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: 'Congo: persecuzione politica e status di rifugiato'
 date: 2015-10-06T09:28:00.000Z
 description: >-
@@ -18,7 +19,7 @@ Il Giudice dà atto della provenienza da “**_un Paese complessivamente a risch
 
 La ricorrente veniva dunque riconosciuta ammissibile alla protezione internazionale.
 
-Giudice: **Tribunale di Roma, I Sezione Civile Dott.ssa Pagliari.** 
+Giudice: **Tribunale di Roma, I Sezione Civile Dott.ssa Pagliari.**
 
 Decisione: **Sentenza n. 279 Volontaria Giurisdizione del 02 aprile 2012**
 

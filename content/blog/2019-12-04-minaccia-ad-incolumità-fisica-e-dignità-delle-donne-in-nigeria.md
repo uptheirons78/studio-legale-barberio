@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: Minaccia ad incolumità fisica e dignità delle donne in Nigeria
 date: 2015-10-03T10:36:00.000Z
 description: >-
@@ -18,7 +19,7 @@ Argomentando sotto il profilo logico, la Corte d’Appello di Roma ritiene **inn
 
 Inoltre, richiama il dato letterale del quinto comma dell’art. 10 del D. Lgs. 25/08 che estende le garanzie previste “_per tutte le fasi del procedimento amministrativo_” a tutte le fasi dell’eventuale giudizio di impugnazione: “_in caso di impugnazione della decisione in sede giurisdizionale , allo straniero, durante lo svolgimento del relativo giudizio, sono assicurate le stesse garanzie di cui al presente decreto_”.
 
-Giudice: **Corte d’Appello di Roma, Dott. Scaramuzzi**. 
+Giudice: **Corte d’Appello di Roma, Dott. Scaramuzzi**.
 
 Decisione: **Sentenza n. 1022 del 2014**.
 

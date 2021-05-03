@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: L’assurda burocrazia del gratuito patrocinio per i richiedenti asilo
 date: 2015-10-03T14:59:00.000Z
 description: >-

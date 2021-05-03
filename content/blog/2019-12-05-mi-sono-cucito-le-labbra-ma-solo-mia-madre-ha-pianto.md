@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: Mi sono cucito le labbra ma solo mia madre ha pianto
 date: 2019-12-05T09:10:16.495Z
 description: >-

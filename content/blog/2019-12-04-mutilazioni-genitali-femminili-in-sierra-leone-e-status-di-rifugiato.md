@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: Mutilazioni genitali femminili in Sierra Leone e status di rifugiato
 date: 2015-10-06T09:16:00.000Z
 description: >-
@@ -20,7 +21,7 @@ Per tali motivi la Corte d’Appello di Roma ha riconosciuto lo status di rifugi
 
 Rilevante in materia è la [risoluzione ONU in merito alle mutilazioni genitali femminili](https://bit.ly/2Rk6tbi).
 
-Giudice: **Corte d’Appello di Roma** 
+Giudice: **Corte d’Appello di Roma**
 
 Decisione: **Sentenza n. 3854 del 02 luglio 2012**
 

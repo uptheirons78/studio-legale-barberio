@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: >-
   Status di rifugiato per discriminazione sessuale. Credibilità e criteri ex
   art. 3 comma 5 D. Lgs. 251/2007

@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: CORTE DI CASSAZIONE – 12 DICEMBRE 2016 ORDINANZA N. 25463
 date: 2018-02-12T08:40:00.000Z
 description: >-

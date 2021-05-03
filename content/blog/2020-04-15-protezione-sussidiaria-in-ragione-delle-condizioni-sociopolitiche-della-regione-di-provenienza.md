@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: >-
   Protezione Sussidiaria per conflitto generalizzato e violenza indiscriminata nella regione di appartenenza.
 date: 2020-04-15T09:00:00.000Z

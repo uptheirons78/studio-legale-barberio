@@ -1,4 +1,5 @@
 ---
+templateKey: blog-post
 title: Persecuzione politica e torture in Darfur
 date: 2015-10-02T10:46:00.000Z
 description: >-
@@ -17,7 +18,7 @@ La Corte d’appello di Roma, nella sentenza allegata, chiarisce altresì il pri
 
 La Corte sancisce che i rapporti delle organizzazioni internazionali acquisibili d’ufficio tramite agevole ricerca informatica costituiscono informazioni sussumibili nel fatto notorio e idonee a supportare la domanda con riferimento al criterio di giudizio enunciato dall’art. 116 c.p.c..
 
-Giudice: **Corte d’Appello di Roma, I Sezione Civile, Dott.ssa Fanti**. 
+Giudice: **Corte d’Appello di Roma, I Sezione Civile, Dott.ssa Fanti**.
 
 Decisione: **Sentenza n. 2858 del 2011**.
 
