@@ -13,6 +13,7 @@ import { findTitleLeft, findTitleRight } from "../utils/title";
 
 // Animations
 import Fade from "../components/Animations/Fade";
+import { StudioStyledBackground } from "../components/Styles/StudioStyledBackground";
 
 const Blog = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
@@ -33,13 +34,17 @@ const Blog = ({ data }) => {
           `diritto degli stranieri`,
         ]}
       />
-      <Background>
+      <StudioStyledBackground
+        banner={data.banner.publicURL}
+        tabletBanner={data.tabletBanner.publicURL}
+        mobileBanner={data.mobileBanner.publicURL}
+      >
         <Hero
           titleLeft={findTitleLeft(heading)}
           titleRight={findTitleRight(heading)}
           descrizione={description}
         />
-      </Background>
+      </StudioStyledBackground>
       <div className="container">
         <Fade>
           <div className="row">
@@ -55,7 +60,7 @@ const Blog = ({ data }) => {
           <h4 className="heading-2 mt-5">Articoli</h4>
           <hr className="mb-4" />
           <div className="row my-5">
-            {posts.map(post => (
+            {posts.map((post) => (
               <Card key={post.node.id} post={post.node} />
             ))}
           </div>
@@ -69,6 +74,15 @@ export default Blog;
 
 export const blogPageQuery = graphql`
   query BlogQuery {
+    banner: file(relativePath: { eq: "studio__banner-01.jpg" }) {
+      publicURL
+    }
+    tabletBanner: file(relativePath: { eq: "studio__banner-ipad-01.jpg" }) {
+      publicURL
+    }
+    mobileBanner: file(relativePath: { eq: "laura-home-mobile.jpg" }) {
+      publicURL
+    }
     markdownRemark(frontmatter: { templateKey: { eq: "blog-page" } }) {
       frontmatter {
         title
