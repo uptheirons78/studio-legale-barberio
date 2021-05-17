@@ -5,10 +5,10 @@ import styled from "styled-components";
 // Components
 import Layout from "../components/Layout/Layout";
 import SEO from "../components/seo";
-// import Background from "../components/Contatti/Background";
 import Hero from "../components/Global/Hero";
 import Info from "../components/Global/Info";
 import Mappa from "../components/Global/Map";
+import { StudioStyledBackground } from "../components/Styles/StudioStyledBackground";
 
 // Utils
 import { findTitleLeft, findTitleRight } from "../utils/title";
@@ -43,20 +43,17 @@ const ContattiPage = ({ data }) => {
           `diritto degli stranieri`,
         ]}
       />
-      <div
-        style={{
-          backgroundImage: `url(${data.banner.publicURL})`,
-          backgroundPosition: `center`,
-          backgroundSize: `cover`,
-          backgroundRepeat: `no-repeat`,
-        }}
+      <StudioStyledBackground
+        banner={data.banner.publicURL}
+        tabletBanner={data.tabletBanner.publicURL}
+        mobileBanner={data.mobileBanner.publicURL}
       >
         <Hero
           titleLeft={findTitleLeft(heading)}
           titleRight={findTitleRight(heading)}
           descrizione={description}
         />
-      </div>
+      </StudioStyledBackground>
       <div className="container">
         <Fade>
           <div className="row">
@@ -123,6 +120,12 @@ export const ContattiPageQuery = graphql`
       html
     }
     banner: file(relativePath: { eq: "laura-contatti-banner-01.jpg" }) {
+      publicURL
+    }
+    tabletBanner: file(relativePath: { eq: "laura-contatti-banner-01.jpg" }) {
+      publicURL
+    }
+    mobileBanner: file(relativePath: { eq: "laura-contatti-banner-01.jpg" }) {
       publicURL
     }
   }
