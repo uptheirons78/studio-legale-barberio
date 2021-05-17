@@ -5,16 +5,15 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout/Layout";
 import SEO from "../components/seo";
 import Hero from "../components/Global/Hero";
-// import Background from "../components/ChiSiamo/Background";
 import Content from "../components/ChiSiamo/Content";
 import AboutPageAside from "../components/ChiSiamo/Aside";
+import { StudioStyledBackground } from "../components/Styles/StudioStyledBackground";
 
 // Utils
 import { findTitleLeft, findTitleRight } from "../utils/title";
 
 // Animations
 import Fade from "../components/Animations/Fade";
-import { StudioStyledBackground } from "../components/Styles/StudioStyledBackground";
 
 // Set Language
 const lingua = "IT";

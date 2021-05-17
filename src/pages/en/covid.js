@@ -4,9 +4,9 @@ import { graphql } from "gatsby";
 // Components
 import Layout from "../../components/Layout/Layout";
 import SEO from "../../components/seo";
-import Background from "../../components/Privacy/Background";
 import Hero from "../../components/Global/Hero";
 import { Covid } from "../../components/Styles/StyledCovid";
+import { StudioStyledBackground } from "../../components/Styles/StudioStyledBackground";
 
 // Utils
 import { findTitleLeft, findTitleRight } from "../../utils/title";
@@ -31,13 +31,17 @@ const CovidEnglishPage = ({ data }) => {
           `diritto degli stranieri`,
         ]}
       />
-      <Background>
+      <StudioStyledBackground
+        banner={data.banner.publicURL}
+        tabletBanner={data.tabletBanner.publicURL}
+        mobileBanner={data.mobileBanner.publicURL}
+      >
         <Hero
           titleLeft={findTitleLeft(heading)}
           titleRight={findTitleRight(heading)}
           descrizione={description}
         />
-      </Background>
+      </StudioStyledBackground>
       <div className="container">
         <Fade>
           <div className="row">
@@ -65,6 +69,15 @@ export const covidENQuery = graphql`
         description
       }
       html
+    }
+    banner: file(relativePath: { eq: "studio__banner-01.jpg" }) {
+      publicURL
+    }
+    tabletBanner: file(relativePath: { eq: "studio__banner-ipad-01.jpg" }) {
+      publicURL
+    }
+    mobileBanner: file(relativePath: { eq: "laura-home-mobile.jpg" }) {
+      publicURL
     }
   }
 `;

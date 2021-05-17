@@ -4,9 +4,9 @@ import { graphql } from "gatsby";
 // Components
 import Layout from "../../components/Layout/Layout";
 import SEO from "../../components/seo";
-import Background from "../../components/Collaboratori/Background";
 import Hero from "../../components/Global/Hero";
 import CollaboratoriCard from "../../components/Collaboratori/CollaboratoriCard";
+import { StudioStyledBackground } from "../../components/Styles/StudioStyledBackground";
 
 // Animations
 import Fade from "../../components/Animations/Fade";
@@ -42,16 +42,20 @@ const PartnersPage = ({ data }) => {
           `foreigners and refugees law`,
         ]}
       />
-      <Background>
+      <StudioStyledBackground
+        banner={data.banner.publicURL}
+        tabletBanner={data.tabletBanner.publicURL}
+        mobileBanner={data.mobileBanner.publicURL}
+      >
         <Hero
           titleLeft={findTitleLeft(en_heading)}
           titleRight={findTitleRight(en_heading)}
           descrizione={en_description}
         />
-      </Background>
+      </StudioStyledBackground>
       <div className="container">
         <Fade>
-          {collaboratori.map(collaboratore => (
+          {collaboratori.map((collaboratore) => (
             <CollaboratoriCard
               key={collaboratore.name}
               collaboratore={collaboratore}
@@ -68,6 +72,15 @@ export default PartnersPage;
 
 export const PartnersPageQuery = graphql`
   query PartnersQuery {
+    banner: file(relativePath: { eq: "studio__banner-01.jpg" }) {
+      publicURL
+    }
+    tabletBanner: file(relativePath: { eq: "studio__banner-ipad-01.jpg" }) {
+      publicURL
+    }
+    mobileBanner: file(relativePath: { eq: "laura-home-mobile.jpg" }) {
+      publicURL
+    }
     markdownRemark(frontmatter: { templateKey: { eq: "collaboratori-page" } }) {
       frontmatter {
         en_title

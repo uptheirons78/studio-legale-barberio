@@ -4,11 +4,11 @@ import { graphql } from "gatsby";
 // Components
 import Layout from "../../components/Layout/Layout";
 import SEO from "../../components/seo";
-import Background from "../../components/Home/Background";
 import Hero from "../../components/Global/Hero";
 import Content from "../../components/Home/Content";
 import Aside from "../../components/Home/Aside";
 import Card from "../../components/Global/Card";
+import { StudioStyledBackground } from "../../components/Styles/StudioStyledBackground";
 
 // Utils
 import { findTitleLeft, findTitleRight } from "../../utils/title";
@@ -36,13 +36,17 @@ const EnIndexPage = ({ data }) => {
           `foreigners and refugees law`,
         ]}
       />
-      <Background>
+      <StudioStyledBackground
+        banner={data.banner.publicURL}
+        tabletBanner={data.tabletBanner.publicURL}
+        mobileBanner={data.mobileBanner.publicURL}
+      >
         <Hero
           titleLeft={findTitleLeft(title)}
           titleRight={findTitleRight(title)}
           descrizione={description}
         />
-      </Background>
+      </StudioStyledBackground>
       <div className="container">
         <Fade>
           <div className="row">
@@ -66,6 +70,15 @@ export default EnIndexPage;
 
 export const EnglishIndexPageQuery = graphql`
   query EnglishHomePageQuery {
+    banner: file(relativePath: { eq: "studio__banner-01.jpg" }) {
+      publicURL
+    }
+    tabletBanner: file(relativePath: { eq: "studio__banner-ipad-01.jpg" }) {
+      publicURL
+    }
+    mobileBanner: file(relativePath: { eq: "laura-home-mobile.jpg" }) {
+      publicURL
+    }
     aside: allMarkdownRemark(
       filter: { frontmatter: { templateKey: { eq: "aside" } } }
     ) {
@@ -89,6 +102,7 @@ export const EnglishIndexPageQuery = graphql`
         }
       }
     }
+
     markdownRemark(frontmatter: { templateKey: { eq: "en-index-page" } }) {
       frontmatter {
         title

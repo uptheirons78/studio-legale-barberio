@@ -5,10 +5,10 @@ import styled from "styled-components";
 // Components
 import Layout from "../../components/Layout/Layout";
 import SEO from "../../components/seo";
-import Background from "../../components/Contatti/Background";
 import Hero from "../../components/Global/Hero";
 import Info from "../../components/Global/Info";
 import Mappa from "../../components/Global/Map";
+import { StudioStyledBackground } from "../../components/Styles/StudioStyledBackground";
 
 // Utils
 import { findTitleLeft, findTitleRight } from "../../utils/title";
@@ -44,13 +44,17 @@ const ContactUs = ({ data }) => {
           `foreigners and refugees law`,
         ]}
       />
-      <Background>
+      <StudioStyledBackground
+        banner={data.banner.publicURL}
+        tabletBanner={data.tabletBanner.publicURL}
+        mobileBanner={data.mobileBanner.publicURL}
+      >
         <Hero
           titleLeft={findTitleLeft(heading)}
           titleRight={findTitleRight(heading)}
           descrizione={description}
         />
-      </Background>
+      </StudioStyledBackground>
       <div className="container">
         <Fade>
           <div className="row">
@@ -90,18 +94,18 @@ const Widget = styled.div`
   text-align: justify;
 
   h5 {
-    color: ${props => props.theme.black};
+    color: ${(props) => props.theme.black};
   }
 
   p {
-    color: ${props => props.theme.lightBlack};
+    color: ${(props) => props.theme.lightBlack};
     font-size: 0.9rem;
     margin-bottom: 0;
   }
 
   strong,
   a {
-    color: ${props => props.theme.primaryColor};
+    color: ${(props) => props.theme.primaryColor};
     font-weight: 700;
   }
 `;
@@ -115,6 +119,15 @@ export const ContactUsPageQuery = graphql`
         description
       }
       html
+    }
+    banner: file(relativePath: { eq: "laura-contatti-banner-01.jpg" }) {
+      publicURL
+    }
+    tabletBanner: file(relativePath: { eq: "laura-contatti-banner-01.jpg" }) {
+      publicURL
+    }
+    mobileBanner: file(relativePath: { eq: "laura-contatti-banner-01.jpg" }) {
+      publicURL
     }
   }
 `;

@@ -1,17 +1,17 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
 import styled from "styled-components";
 
 // Components
 import Layout from "../components/Layout/Layout";
 import SEO from "../components/seo";
-import Background from "../components/404/Background";
 import Hero from "../components/Global/Hero";
+import { StudioStyledBackground } from "../components/Styles/StudioStyledBackground";
 
 // Animations
 import Fade from "../components/Animations/Fade";
 
-const NotFoundPage = () => (
+const NotFoundPage = ({ data }) => (
   <Layout lingua="IT">
     <SEO
       title="404: Pagina Non Trovata"
@@ -25,13 +25,17 @@ const NotFoundPage = () => (
         `diritto degli stranieri`,
       ]}
     />
-    <Background>
+    <StudioStyledBackground
+      banner={data.banner.publicURL}
+      tabletBanner={data.tabletBanner.publicURL}
+      mobileBanner={data.mobileBanner.publicURL}
+    >
       <Hero
         titleLeft="404"
         titleRight="Pagina Non Trovata"
         descrizione="La pagina che stai cercando, probabilmente, non esiste o è stata rimossa da questo sito. Ci scusiamo per l'inconveniente."
       />
-    </Background>
+    </StudioStyledBackground>
     <div className="container">
       <Fade>
         <div className="row">
@@ -76,13 +80,27 @@ const NotFoundPage = () => (
 
 export default NotFoundPage;
 
+export const NotFoundPageQuery = graphql`
+  query {
+    banner: file(relativePath: { eq: "laura-contatti-banner-01.jpg" }) {
+      publicURL
+    }
+    tabletBanner: file(relativePath: { eq: "laura-contatti-banner-01.jpg" }) {
+      publicURL
+    }
+    mobileBanner: file(relativePath: { eq: "laura-contatti-banner-01.jpg" }) {
+      publicURL
+    }
+  }
+`;
+
 const Content = styled.div`
   a {
     font-weight: 700;
     transition: all 0.35s ease-in-out;
 
     &:hover {
-      color: ${props => props.theme.secondaryColor};
+      color: ${(props) => props.theme.secondaryColor};
     }
   }
 `;

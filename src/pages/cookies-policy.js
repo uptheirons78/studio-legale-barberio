@@ -5,8 +5,8 @@ import styled from "styled-components";
 // Components
 import Layout from "../components/Layout/Layout";
 import SEO from "../components/seo";
-import Background from "../components/Cookies/Background";
 import Hero from "../components/Global/Hero";
+import { StudioStyledBackground } from "../components/Styles/StudioStyledBackground";
 
 // Utils
 import { findTitleLeft, findTitleRight } from "../utils/title";
@@ -32,13 +32,17 @@ const CookiesPolicy = ({ data }) => {
           `diritto degli stranieri`,
         ]}
       />
-      <Background>
+      <StudioStyledBackground
+        banner={data.banner.publicURL}
+        tabletBanner={data.tabletBanner.publicURL}
+        mobileBanner={data.mobileBanner.publicURL}
+      >
         <Hero
           titleLeft={findTitleLeft(heading)}
           titleRight={findTitleRight(heading)}
           descrizione={description}
         />
-      </Background>
+      </StudioStyledBackground>
       <div className="container">
         <Fade>
           <div className="row">
@@ -59,29 +63,29 @@ export default CookiesPolicy;
 
 const Cookies = styled.div`
   font-size: 0.9rem;
-  color: ${props => props.theme.lightBlack};
+  color: ${(props) => props.theme.lightBlack};
 
   h4 {
     margin-bottom: 1rem;
-    color: ${props => props.theme.black};
+    color: ${(props) => props.theme.black};
   }
 
   p {
     font-size: 0.9rem;
-    color: ${props => props.theme.lightBlack};
+    color: ${(props) => props.theme.lightBlack};
   }
 
   a {
-    color: ${props => props.theme.primaryColor};
+    color: ${(props) => props.theme.primaryColor};
     font-weight: 700;
     transition: all 0.35s ease;
 
     &:hover {
-      color: ${props => props.theme.secondaryColor};
+      color: ${(props) => props.theme.secondaryColor};
     }
 
     &:hover strong {
-      color: ${props => props.theme.secondaryColor};
+      color: ${(props) => props.theme.secondaryColor};
     }
   }
 `;
@@ -95,6 +99,15 @@ export const cookiesQuery = graphql`
         description
       }
       html
+    }
+    banner: file(relativePath: { eq: "laura-contatti-banner-01.jpg" }) {
+      publicURL
+    }
+    tabletBanner: file(relativePath: { eq: "laura-contatti-banner-01.jpg" }) {
+      publicURL
+    }
+    mobileBanner: file(relativePath: { eq: "laura-contatti-banner-01.jpg" }) {
+      publicURL
     }
   }
 `;
