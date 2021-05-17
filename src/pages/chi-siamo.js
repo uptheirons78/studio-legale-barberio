@@ -14,6 +14,7 @@ import { findTitleLeft, findTitleRight } from "../utils/title";
 
 // Animations
 import Fade from "../components/Animations/Fade";
+import { StudioStyledBackground } from "../components/Styles/StudioStyledBackground";
 
 // Set Language
 const lingua = "IT";
@@ -36,20 +37,17 @@ const ChiSiamoPage = ({ data }) => {
           `diritto degli stranieri`,
         ]}
       />
-      <div
-        style={{
-          backgroundImage: `url(${data.banner.publicURL})`,
-          backgroundPosition: `top center`,
-          backgroundSize: `cover`,
-          backgroundRepeat: `no-repeat`,
-        }}
+      <StudioStyledBackground
+        banner={data.banner.publicURL}
+        tabletBanner={data.tabletBanner.publicURL}
+        mobileBanner={data.mobileBanner.publicURL}
       >
         <Hero
           titleLeft={findTitleLeft(heading)}
           titleRight={findTitleRight(heading)}
           descrizione={description}
         />
-      </div>
+      </StudioStyledBackground>
       <div className="container">
         <Fade>
           <div className="row">
@@ -73,7 +71,13 @@ export const pageQuery = graphql`
         description
       }
     }
-    banner: file(relativePath: { eq: "laura-home-banner-4.jpg" }) {
+    banner: file(relativePath: { eq: "studio__banner-01.jpg" }) {
+      publicURL
+    }
+    tabletBanner: file(relativePath: { eq: "studio__banner-ipad-01.jpg" }) {
+      publicURL
+    }
+    mobileBanner: file(relativePath: { eq: "laura-home-mobile.jpg" }) {
       publicURL
     }
   }

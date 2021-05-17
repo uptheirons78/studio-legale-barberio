@@ -50,6 +50,7 @@ const IndexPage = ({ data }) => {
       />
       <StyledBackground
         banner={data.banner.publicURL}
+        tabletBanner={data.tabletBanner.publicURL}
         mobileBanner={data.mobileBanner.publicURL}
       >
         <Hero
@@ -108,7 +109,10 @@ export const IndexPageQuery = graphql`
         }
       }
     }
-    banner: file(relativePath: { eq: "laura-home-banner-3.jpg" }) {
+    banner: file(relativePath: { eq: "studio__banner-01.jpg" }) {
+      publicURL
+    }
+    tabletBanner: file(relativePath: { eq: "studio__banner-ipad-01.jpg" }) {
       publicURL
     }
     mobileBanner: file(relativePath: { eq: "laura-home-mobile.jpg" }) {
