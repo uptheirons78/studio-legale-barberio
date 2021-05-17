@@ -4,16 +4,15 @@ import { graphql } from "gatsby";
 // Components
 import Layout from "../components/Layout/Layout";
 import SEO from "../components/seo";
-import Background from "../components/Blog/Background";
 import Hero from "../components/Global/Hero";
 import Card from "../components/Global/Card";
+import { StudioStyledBackground } from "../components/Styles/StudioStyledBackground";
 
 // Utils
 import { findTitleLeft, findTitleRight } from "../utils/title";
 
 // Animations
 import Fade from "../components/Animations/Fade";
-import { StudioStyledBackground } from "../components/Styles/StudioStyledBackground";
 
 const Blog = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
